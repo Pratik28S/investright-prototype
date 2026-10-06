@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InvestRright Capital | Navigating Every Market Cycle with Institutional Precision</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/index.css">
+</head>
+
+<body style="margin: 0; padding: 0; background-color: #031409;">
+  <div class="ir-master-wrap">
+    <!-- Top Global Header -->
+    <header class="ir-header">
+      <div class="ir-nav-container">
+        <!-- Left: Logo -->
+        <a href="/" class="ir-logo-link" aria-label="InvestRright Capital">
+          <svg class="ir-logo-svg" viewBox="0 0 500 130" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="irGoldLight" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#FFF3D1" />
+                <stop offset="35%" stop-color="#E5C378" />
+                <stop offset="70%" stop-color="#C5A059" />
+                <stop offset="100%" stop-color="#8F6826" />
+              </linearGradient>
+              <linearGradient id="irGoldDark" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#DFBA73" />
+                <stop offset="50%" stop-color="#9E782F" />
+                <stop offset="100%" stop-color="#5C4212" />
+              </linearGradient>
+              <linearGradient id="irArrowGreen" x1="0%" y1="100%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#062417" />
+                <stop offset="50%" stop-color="#0E5C3A" />
+                <stop offset="100%" stop-color="#1DBF7B" />
+              </linearGradient>
+            </defs>
+
+            <!-- Bull Emblem & Swooping Trend Line -->
+            <g transform="translate(10, -5) scale(0.65)">
+              <!-- Green Dynamic Trend Arrow -->
+              <path d="M 60 100 C 110 50, 160 85, 210 105 C 260 125, 310 80, 375 20" fill="none"
+                stroke="url(#irArrowGreen)" stroke-width="7" stroke-linecap="round" />
+              <polygon points="360,14 395,12 388,44 376,28" fill="#1DBF7B" />
+
+              <!-- Charging Bull -->
+              <g transform="translate(10, 30) scale(0.85)">
+                <path
+                  d="M 50 85 C 40 70, 45 45, 65 35 C 85 25, 120 28, 145 42 C 165 35, 195 40, 210 55 C 225 70, 220 95, 205 115 C 190 130, 160 135, 140 130 C 125 140, 95 142, 75 130 C 55 125, 45 105, 50 85 Z"
+                  fill="url(#irGoldLight)" />
+                <path d="M 135 40 C 150 25, 175 25, 195 40 C 215 55, 215 80, 200 95 C 185 80, 155 70, 135 40 Z"
+                  fill="url(#irGoldDark)" opacity="0.85" />
+                <path d="M 195 48 L 235 60 C 245 65, 248 75, 240 82 L 218 88 L 205 75 Z" fill="url(#irGoldLight)" />
+                <path d="M 215 45 C 228 32, 245 28, 260 30 C 250 38, 238 42, 225 48 Z" fill="url(#irGoldLight)" />
+                <path d="M 205 40 C 215 22, 232 15, 252 14 C 240 24, 228 30, 215 42 Z" fill="#FFF3D1" />
+                <path d="M 175 90 L 195 145 L 180 150 L 155 105 Z" fill="url(#irGoldDark)" />
+                <path d="M 190 95 L 215 135 L 202 140 L 175 102 Z" fill="url(#irGoldLight)" />
+                <path d="M 70 95 L 45 145 L 60 150 L 95 110 Z" fill="url(#irGoldDark)" />
+                <path d="M 85 90 L 75 140 L 90 143 L 110 102 Z" fill="url(#irGoldLight)" />
+                <path d="M 50 85 C 30 75, 20 50, 30 30 C 35 20, 45 15, 55 20 C 50 30, 45 45, 55 60 Z"
+                  fill="url(#irGoldDark)" />
+              </g>
+            </g>
+
+            <!-- Wordmark -->
+            <text x="210" y="62" font-family="'Cinzel', 'Playfair Display', Georgia, serif" font-weight="700"
+              font-size="34" fill="#004020" letter-spacing="1.5">
+              Invest<tspan fill="#BCA763">Rright</tspan>
+            </text>
+            <text x="212" y="90" font-family="'Inter', sans-serif" font-weight="600" font-size="11" fill="#004020"
+              letter-spacing="4.5">
+              CAPITAL <tspan fill="#BCA763">•</tspan> AIF CAT III
+            </text>
+          </svg>
+        </a>
+
+        <!-- Center-Right: Navigation Menu -->
+        <nav class="ir-nav-menu">
+          <a href="#home" class="ir-nav-link ir-nav-active">Home</a>
+
+          <!-- Insights Dropdown -->
+          <div class="ir-dropdown">
+            <a href="#insights" class="ir-nav-link ir-dropdown-toggle">
+              Insights <span class="ir-arrow-icon">▾</span>
+            </a>
+            <div class="ir-dropdown-menu">
+              <a href="#blogs" class="ir-dropdown-item">
+                <span class="ir-item-title">Blogs</span>
+                <span class="ir-item-sub">Macro outlook & quantitative market perspectives</span>
+              </a>
+              <a href="#case-studies" class="ir-dropdown-item">
+                <span class="ir-item-title">Case Studies</span>
+                <span class="ir-item-sub">Long-short alpha generation & trade attribution</span>
+              </a>
+            </div>
+          </div>
+
+          <a href="#about" class="ir-nav-link">About</a>
+
+          <!-- Our Offerings -->
+          <a href="#our-offerings" class="ir-nav-link">Our Offerings</a>
+
+          <!-- MOBILE ONLY LOGIN BUTTON -->
+          <a href="#investor-login" class="ir-login-btn ir-mobile-only-btn">
+            <span class="ir-lock-icon">🔒</span> Investor Portal
+          </a>
+        </nav>
+
+        <!-- Far Right: Portal / Login -->
+        <div class="ir-nav-right">
+          <!-- Mobile Toggle Box -->
+          <button class="ir-mobile-btn" aria-label="Toggle navigation">
+            <span class="ir-hamburger-line"></span>
+            <span class="ir-hamburger-line"></span>
+            <span class="ir-hamburger-line"></span>
+          </button>
+
+          <a href="#investor-login" class="ir-login-btn">
+            <span class="ir-lock-icon">🔒</span> Investor Portal
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Sub-Header Ticker Ribbon -->
+    <div class="ir-ticker-bar">
+      <div class="ir-ticker-label">
+        <span class="ir-live-pulse"></span>
+        MARKET UPDATE:
+      </div>
+      <div class="ir-ticker-track-wrapper">
+        <div class="ir-ticker-track">
+          <div class="ir-ticker-item">
+            <span class="ir-ticker-sym">NSE NIFTY 50</span>
+            <span class="ir-ticker-val">25,120.50</span>
+            <span class="ir-ticker-chg ir-up">+0.45%</span>
+          </div>
+          <span class="ir-ticker-sep">|</span>
+          <div class="ir-ticker-item">
+            <span class="ir-ticker-sym">SENSEX</span>
+            <span class="ir-ticker-val">82,300.10</span>
+            <span class="ir-ticker-chg ir-up">+0.39%</span>
+          </div>
+          <span class="ir-ticker-sep">|</span>
+          <div class="ir-ticker-item">
+            <span class="ir-ticker-sym">INDIA VIX</span>
+            <span class="ir-ticker-val">12.80</span>
+            <span class="ir-ticker-chg ir-down">-1.20%</span>
+          </div>
+          <span class="ir-ticker-sep">|</span>
+          <div class="ir-ticker-item">
+            <span class="ir-ticker-sym">USD/INR</span>
+            <span class="ir-ticker-val">83.85</span>
+            <span class="ir-ticker-chg ir-up">+0.02%</span>
+          </div>
+          <span class="ir-ticker-sep">|</span>
+          <div class="ir-ticker-item">
+            <span class="ir-ticker-sym">BRENT CRUDE</span>
+            <span class="ir-ticker-val">$74.20</span>
+            <span class="ir-ticker-chg ir-down">-0.65%</span>
+          </div>
+          <span class="ir-ticker-sep">|</span>
+          <div class="ir-ticker-item">
+            <span class="ir-ticker-sym">10Y G-SEC</span>
+            <span class="ir-ticker-val">6.82%</span>
+            <span class="ir-ticker-chg ir-up">+0.01%</span>
+          </div>
+          <span class="ir-ticker-sep">|</span>
+          <div class="ir-ticker-item">
+            <span class="ir-ticker-sym">ALPHA SPREAD (LONG/SHORT)</span>
+            <span class="ir-ticker-val">+340 bps</span>
+            <span class="ir-ticker-chg ir-gold">EXPANDING</span>
+          </div>
+          <span class="ir-ticker-sep">|</span>
+
+          <!-- Duplicated items for continuous infinite scroll loop -->
+          <div class="ir-ticker-item">
+            <span class="ir-ticker-sym">NSE NIFTY 50</span>
+            <span class="ir-ticker-val">25,120.50</span>
+            <span class="ir-ticker-chg ir-up">+0.45%</span>
+          </div>
+          <span class="ir-ticker-sep">|</span>
+          <div class="ir-ticker-item">
+            <span class="ir-ticker-sym">SENSEX</span>
+            <span class="ir-ticker-val">82,300.10</span>
+            <span class="ir-ticker-chg ir-up">+0.39%</span>
+          </div>
+          <span class="ir-ticker-sep">|</span>
+          <div class="ir-ticker-item">
+            <span class="ir-ticker-sym">INDIA VIX</span>
+            <span class="ir-ticker-val">12.80</span>
+            <span class="ir-ticker-chg ir-down">-1.20%</span>
+          </div>
+          <span class="ir-ticker-sep">|</span>
+          <div class="ir-ticker-item">
+            <span class="ir-ticker-sym">USD/INR</span>
+            <span class="ir-ticker-val">83.85</span>
+            <span class="ir-ticker-chg ir-up">+0.02%</span>
+          </div>
+          <span class="ir-ticker-sep">|</span>
+          <div class="ir-ticker-item">
+            <span class="ir-ticker-sym">BRENT CRUDE</span>
+            <span class="ir-ticker-val">$74.20</span>
+            <span class="ir-ticker-chg ir-down">-0.65%</span>
+          </div>
+          <span class="ir-ticker-sep">|</span>
+          <div class="ir-ticker-item">
+            <span class="ir-ticker-sym">10Y G-SEC</span>
+            <span class="ir-ticker-val">6.82%</span>
+            <span class="ir-ticker-chg ir-up">+0.01%</span>
+          </div>
+          <span class="ir-ticker-sep">|</span>
+          <div class="ir-ticker-item">
+            <span class="ir-ticker-sym">ALPHA SPREAD (LONG/SHORT)</span>
+            <span class="ir-ticker-val">+340 bps</span>
+            <span class="ir-ticker-chg ir-gold">EXPANDING</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Section: Quantitative Derivatives Trading Desk with Wealth Company Layout -->
+    <section class="ir-derivatives-hero">
+      <div class="ir-dd-vignette-layer"></div>
+      <div class="ir-wealth-content">
+        <h1 class="ir-wealth-heading">Navigating Every Market Cycle with Institutional Precision</h1>
+        <p class="ir-wealth-subheading">A SEBI-registered AIF delivering sophisticated risk management and capital
+          preservation for high-net-worth portfolios.</p>
+        <a href="#what-we-offer" class="ir-scroll-btn" id="irScrollBtn">
+          <span class="ir-scroll-btn-text">Explore</span>
+          <svg class="ir-scroll-arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <polyline points="19 12 12 19 5 12"></polyline>
+          </svg>
+        </a>
+      </div>
+    </section>
+    <!-- What we offer section -->
+    <!-- ============================================================
+         WHAT WE OFFER SECTION
+         ============================================================ -->
+    <!-- ============================================================
+         WHAT WE OFFER SECTION
+         ============================================================ -->
+
+    <section class='ir-sec' id='what-we-offer'>
+      <div class='ir-sec-viewport'>
+        <div class='ir-sec-watermark'>INVESTRRIGHT</div>
+        <div class='ir-sec-top-header'>
+          <h2 class='ir-sec-heading'>Our Offerings</h2>
+          <div class='ir-sec-line'></div>
+        </div>
+        <div class='ir-sec-stage'>
+          <div class='ir-sec-state' id='wwo_s1'>
+            <div class='ir-sec-split ir-split-wwo1'>
+              <div class='ir-wwo1-left'>
+                <div class='ir-card-badge' id='wwo_l0'>CAT III AIF &bull; SEBI REGISTERED</div>
+                <h3 class='ir-wwo1-title' id='wwo_l1'><span style="white-space:nowrap">Infinity Growth Fund - I</span></h3>
+                <div class='ir-sec-line-sub' id='wwo_l2'></div>
+                <p class='ir-wwo1-desc' id='wwo_l3'>A multi-strategy AIF Engineered for evolving market cycles.</p>
+                <div class='ir-wwo1-meta' id='wwo_l4'>
+                  <div class='ir-meta-item'><span class='ir-meta-stat-num'>CAT III</span><span
+                      class='ir-meta-stat-lbl'>SEBI Registered</span></div>
+                  <div class='ir-meta-sep'></div>
+                  <div class='ir-meta-item'><span class='ir-meta-stat-num'>Long-Short</span><span
+                      class='ir-meta-stat-lbl'>Equity Execution</span></div>
+                </div>
+              </div>
+              <div class='ir-wwo1-right'>
+                <div class='ir-mini-card' id='wwo_c1'>
+                  <div class='ir-mini-card-head'><span class='ir-mini-badge'>INVESTOR FIRST STRUCTURE</span><span
+                      class='ir-mini-num'>01</span></div>
+                  <p class='ir-mini-text'>Three return bands. Three different fee structures. One principle: <strong
+                      class='ir-gold-text'>Investor First</strong>.</p>
+                </div>
+                <div class='ir-mini-card' id='wwo_c2'>
+                  <div class='ir-mini-card-head'><span class='ir-mini-badge'>CORE ENGINE</span><span
+                      class='ir-mini-num'>02</span></div>
+                  <p class='ir-mini-text'><strong class='ir-gold-text'>Human Insight</strong>, quantitative Systems,
+                    &amp; Artificial Intelligence combined into one disciplined engine.</p>
+                </div>
+                <div class='ir-mini-card' id='wwo_c3'>
+                  <div class='ir-mini-card-head'><span class='ir-mini-badge'>RISK &amp; PRESERVATION</span><span
+                      class='ir-mini-num'>03</span></div>
+                  <p class='ir-mini-text'>Position Sizing, liquidity discipline &amp; hedging are designed to keep
+                    capital <strong class='ir-gold-text'>adaptive &amp; risk aware</strong>.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='ir-sec-state' id='wwo_s2'>
+            <div class='ir-sec-split'>
+              <div class='ir-sec-col-card'>
+                <div class='ir-card' id='wwo_s2_c'>
+                  <div class='ir-card-head'><span class='ir-card-badge'>CAT III AIF</span>
+                    <div class='ir-card-crest'>IR</div>
+                  </div>
+                  <div class='ir-card-visual'>
+                    <div class='ir-card-icon'><span class='ir-card-ring'></span><span class='ir-card-monogram'>01</span>
+                    </div>
+                  </div>
+                  <div class='ir-card-footer'>
+                    <h4 class='ir-card-title'><span style="white-space:nowrap">Infinity Growth Fund - I</span></h4>
+                    <div class='ir-card-sub'>SEBI Registered Architecture</div>
+                  </div>
+                </div>
+              </div>
+              <div class='ir-sec-col-content'>
+                <h3 class='ir-sec-title' id='wwo_s1_hd'>Investor First Structure</h3>
+                <div class='ir-sec-line-sub' id='wwo_s1_ln'></div>
+                <ul class='ir-bullet-list'>
+                  <li class='ir-bullet-item' id='wwo_b2_1'><span class='ir-bullet-dot'></span><span
+                      class='ir-bullet-text'>Three distinct return bands calibrated to institutional capital
+                      objectives</span></li>
+                  <li class='ir-bullet-item' id='wwo_b2_2'><span class='ir-bullet-dot'></span><span
+                      class='ir-bullet-text'>Three transparent fee structures prioritizing net alpha and hurdle
+                      rates</span></li>
+                  <li class='ir-bullet-item' id='wwo_b2_3'><span class='ir-bullet-dot'></span><span
+                      class='ir-bullet-text'>One foundational operating principle: uncompromised investor
+                      alignment</span></li>
+                  <li class='ir-bullet-item' id='wwo_b2_4'><span class='ir-bullet-dot'></span><span
+                      class='ir-bullet-text'>Engineered for disciplined wealth preservation and continuous
+                      compounding</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class='ir-sec-state' id='wwo_s3'>
+            <div class='ir-sec-split ir-reverse'>
+              <div class='ir-sec-col-card'>
+                <div class='ir-card' id='wwo_s3_c'>
+                  <div class='ir-card-head'><span class='ir-card-badge'>QUANT &amp; AI</span>
+                    <div class='ir-card-crest'>IR</div>
+                  </div>
+                  <div class='ir-card-visual'>
+                    <div class='ir-card-icon'><span class='ir-card-ring'></span><span class='ir-card-monogram'>02</span>
+                    </div>
+                  </div>
+                  <div class='ir-card-footer'>
+                    <h4 class='ir-card-title'>Synthesis Engine</h4>
+                    <div class='ir-card-sub'>Systematic Alpha Architecture</div>
+                  </div>
+                </div>
+              </div>
+              <div class='ir-sec-col-content'>
+                <h3 class='ir-sec-title' id='wwo_s3_hd'>Core Synthesis Engine</h3>
+                <div class='ir-sec-line-sub' id='wwo_s3_ln'></div>
+                <ul class='ir-bullet-list'>
+                  <li class='ir-bullet-item' id='wwo_b3_1'><span class='ir-bullet-dot'></span><span
+                      class='ir-bullet-text'>Human Market Insight developed across multiple Indian market cycles</span>
+                  </li>
+                  <li class='ir-bullet-item' id='wwo_b3_2'><span class='ir-bullet-dot'></span><span
+                      class='ir-bullet-text'>Quantitative Systems scanning real-time derivative arbitrage
+                      opportunities</span></li>
+                  <li class='ir-bullet-item' id='wwo_b3_3'><span class='ir-bullet-dot'></span><span
+                      class='ir-bullet-text'>Artificial Intelligence models identifying structural market regime
+                      transitions</span></li>
+                  <li class='ir-bullet-item' id='wwo_b3_4'><span class='ir-bullet-dot'></span><span
+                      class='ir-bullet-text'>Unified into a single, automated, emotionally uncompromised trading
+                      engine</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class='ir-sec-state' id='wwo_s4'>
+            <div class='ir-sec-split'>
+              <div class='ir-sec-col-card'>
+                <div class='ir-card' id='wwo_s4_c'>
+                  <div class='ir-card-head'><span class='ir-card-badge'>DEFENSE FIRST</span>
+                    <div class='ir-card-crest'>IR</div>
+                  </div>
+                  <div class='ir-card-visual'>
+                    <div class='ir-card-icon'><span class='ir-card-ring'></span><span class='ir-card-monogram'>03</span>
+                    </div>
+                  </div>
+                  <div class='ir-card-footer'>
+                    <h4 class='ir-card-title'>Risk &amp; Preservation</h4>
+                    <div class='ir-card-sub'>Drawdown Mitigation Protocol</div>
+                  </div>
+                </div>
+              </div>
+              <div class='ir-sec-col-content'>
+                <h3 class='ir-sec-title' id='wwo_s4_hd'>Risk Discipline &amp; Capital Hedging</h3>
+                <div class='ir-sec-line-sub' id='wwo_s4_ln'></div>
+                <ul class='ir-bullet-list'>
+                  <li class='ir-bullet-item' id='wwo_b4_1'><span class='ir-bullet-dot'></span><span
+                      class='ir-bullet-text'>Dynamic Position Sizing adjusted to live volatility regimes</span></li>
+                  <li class='ir-bullet-item' id='wwo_b4_2'><span class='ir-bullet-dot'></span><span
+                      class='ir-bullet-text'>Rigorous Liquidity Discipline maintaining agility during market
+                      stress</span></li>
+                  <li class='ir-bullet-item' id='wwo_b4_3'><span class='ir-bullet-dot'></span><span
+                      class='ir-bullet-text'>Systematic Derivative Hedging defending portfolios against black swan
+                      events</span></li>
+                </ul>
+                <div style='margin-top:24px;'><a href='#our-team' class='ir-sec-btn'>explore our team &gt;&gt;</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class='ir-sec' id='our-team'>
+      <div class='ir-sec-viewport'>
+        <div class='ir-sec-watermark'>INVESTRRIGHT</div>
+        <div class='ir-sec-top-header'>
+          <h2 class='ir-sec-heading'>Our Team</h2>
+          <div class='ir-sec-line'></div>
+        </div>
+        <div class='ir-sec-stage'>
+          <div class='ir-sec-state' id='team_s1'>
+            <div class='ir-sec-split'>
+              <div class='ir-sec-col-card'>
+                <div class='ir-card' id='team_s1_c'>
+                  <div class='ir-card-head'><span class='ir-card-badge'>LEADERSHIP</span>
+                    <div class='ir-card-crest'>IR</div>
+                  </div>
+                  <div class='ir-card-visual'>
+                    <div class='ir-card-icon'><span class='ir-card-ring'></span><span class='ir-card-monogram'>AK</span>
+                    </div>
+                  </div>
+                  <div class='ir-card-footer'>
+                    <h4 class='ir-card-title'>Anuj Khare</h4>
+                    <div class='ir-card-sub'>Founder &amp; Chief Executive Officer</div>
+                  </div>
+                </div>
+              </div>
+              <div class='ir-sec-col-content'>
+                <h3 class='ir-sec-title' id='team_s1_hd'>Anuj Khare | CEO</h3>
+                <div class='ir-sec-line-sub' id='team_s1_ln'></div>
+                <ul class='ir-bullet-list'>
+                  <li class='ir-bullet-item' id='team_b1_1'><span class='ir-bullet-dot'></span><span
+                      class='ir-bullet-text'>BBA</span></li>
+                  <li class='ir-bullet-item' id='team_b1_2'><span class='ir-bullet-dot'></span><span
+                      class='ir-bullet-text'>NISM VIII</span></li>
+                  <li class='ir-bullet-item' id='team_b1_3'><span class='ir-bullet-dot'></span><span
+                      class='ir-bullet-text'>NISM XIX-C</span></li>
+                  <li class='ir-bullet-item' id='team_b1_4'><span class='ir-bullet-dot'></span><span
+                      class='ir-bullet-text'>Pursuing CFA</span></li>
+                  <li class='ir-bullet-item' id='team_b1_5'><span class='ir-bullet-dot'></span><span
+                      class='ir-bullet-text'>7 years and counting in market</span></li>
+                  <li class='ir-bullet-item' id='team_b1_6'><span class='ir-bullet-dot'></span><span
+                      class='ir-bullet-text'>Has managed books of ~100 CR</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class='ir-sec-state' id='team_s2'>
+            <div class='ir-sec-split ir-reverse'>
+              <div class='ir-sec-col-card'>
+                <div class='ir-card' id='team_s2_c'>
+                  <div class='ir-card-head'><span class='ir-card-badge'>QUANTITATIVE</span>
+                    <div class='ir-card-crest'>IR</div>
+                  </div>
+                  <div class='ir-card-visual'>
+                    <div class='ir-card-icon'><span class='ir-card-ring'></span><span class='ir-card-monogram'>JK</span>
+                    </div>
+                  </div>
+                  <div class='ir-card-footer'>
+                    <h4 class='ir-card-title'>Jatin Khare</h4>
+                    <div class='ir-card-sub'>Chief Investment Officer</div>
+                  </div>
+                </div>
+              </div>
+              <div class='ir-sec-col-content'>
+                <h3 class='ir-sec-title' id='team_s2_hd'>Jatin Khare | CIO</h3>
+                <div class='ir-sec-line-sub' id='team_s2_ln'></div>
+                <ul class='ir-bullet-list'>
+                  <li class='ir-bullet-item' id='team_b2_1'><span class='ir-bullet-dot'></span><span
+                      class='ir-bullet-text'>BBA</span></li>
+                  <li class='ir-bullet-item' id='team_b2_2'><span class='ir-bullet-dot'></span><span
+                      class='ir-bullet-text'>NISM VIII</span></li>
+                  <li class='ir-bullet-item' id='team_b2_3'><span class='ir-bullet-dot'></span><span
+                      class='ir-bullet-text'>Pursuing CFA</span></li>
+                  <li class='ir-bullet-item' id='team_b2_4'><span class='ir-bullet-dot'></span><span
+                      class='ir-bullet-text'>5 Years in Fund and risk systems</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class='ir-sec-state' id='team_s3'>
+            <div class='ir-center-stage'>
+              <div class='ir-center-eyebrow'><span class='ir-center-dot'></span><span>PROVEN INSTITUTIONAL
+                  STEWARDSHIP</span><span class='ir-center-dot'></span></div>
+              <h2 class='ir-center-heading'>75+ years of aggregated experience</h2>
+              <p class='ir-center-desc'>Uniting seasoned capital allocators, veteran derivatives traders, and
+                quantitative architects dedicated to disciplined wealth preservation and compounding across market
+                cycles.</p>
+              <div class='ir-center-pillars'>
+                <div>
+                  <div class='ir-pillar-stat'>&#8377;2,500+ Cr</div>
+                  <div class='ir-pillar-lbl'>Cumulative Volume &amp; Advisory</div>
+                </div>
+                <div class='ir-pillar-sep'></div>
+                <div>
+                  <div class='ir-pillar-stat'>SEBI Cat III</div>
+                  <div class='ir-pillar-lbl'>Registered AIF Architecture</div>
+                </div>
+                <div class='ir-pillar-sep'></div>
+                <div>
+                  <div class='ir-pillar-stat'>4 Cycles</div>
+                  <div class='ir-pillar-lbl'>Market Dislocation Resilience</div>
+                </div>
+              </div><a href='#investment-methodology' class='ir-sec-btn'>view methodology &gt;&gt;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class='ir-sec' id='investment-methodology'>
+      <div class='ir-sec-viewport'>
+        <div class='ir-sec-watermark'>INVESTRRIGHT</div>
+        <div class='ir-sec-top-header'>
+          <h2 class='ir-sec-heading'>Investment Methodology</h2>
+          <div class='ir-sec-line'></div>
+        </div>
+        <div class='ir-sec-stage'>
+          <div class='ir-sec-state' id='meth_s1'>
+            <div class='ir-sec-split'>
+              <div class='ir-sec-col-card'>
+                <div class='ir-card' id='meth_s1_c'>
+                  <div class='ir-card-head'><span class='ir-card-badge'>MANDATE ACCESS</span>
+                    <div class='ir-card-crest'>IR</div>
+                  </div>
+                  <div class='ir-card-visual'>
+                    <div class='ir-card-icon'><span class='ir-card-ring'></span><span class='ir-card-monogram'>01</span>
+                    </div>
+                  </div>
+                  <div class='ir-card-footer'>
+                    <h4 class='ir-card-title'>Accredited Access</h4>
+                    <div class='ir-card-sub'>Qualified Institutional Investors</div>
+                  </div>
+                </div>
+              </div>
+              <div class='ir-sec-col-content'>
+                <h3 class='ir-sec-title' id='team_s3_hd'>Eligibility &amp; Client Onboarding</h3>
+                <div class='ir-sec-line-sub' id='team_s3_ln'></div>
+                <ul class='ir-bullet-list'>
+                  <li class='ir-bullet-item' id='meth_b1_1'><span class='ir-bullet-dot'></span><span
+                      class='ir-bullet-text'>Open to Accredited Family Offices, Ultra HNIs &amp; Institutional
+                      Funds</span></li>
+                  <li class='ir-bullet-item' id='meth_b1_2'><span class='ir-bullet-dot'></span><span
+                      class='ir-bullet-text'>Mandate onboarding compliant with SEBI AIF Category III guidelines</span>
+                  </li>
+                  <li class='ir-bullet-item' id='meth_b1_3'><span class='ir-bullet-dot'></span><span
+                      class='ir-bullet-text'>Comprehensive risk disclosure documents and private placement
+                      memorandum</span></li>
+                  <li class='ir-bullet-item' id='meth_b1_4'><span class='ir-bullet-dot'></span><span
+                      class='ir-bullet-text'>Personalized allocation framework aligned with capital hurdle
+                      requirements</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class='ir-sec-state' id='meth_s2'>
+            <div class='ir-sec-split ir-reverse'>
+              <div class='ir-sec-col-card'>
+                <div class='ir-card' id='meth_s2_c'>
+                  <div class='ir-card-head'><span class='ir-card-badge'>GOVERNANCE</span>
+                    <div class='ir-card-crest'>IR</div>
+                  </div>
+                  <div class='ir-card-visual'>
+                    <div class='ir-card-icon'><span class='ir-card-ring'></span><span class='ir-card-monogram'>02</span>
+                    </div>
+                  </div>
+                  <div class='ir-card-footer'>
+                    <h4 class='ir-card-title'>Custody &amp; Reporting</h4>
+                    <div class='ir-card-sub'>Statutory Transparency</div>
+                  </div>
+                </div>
+              </div>
+              <div class='ir-sec-col-content'>
+                <h3 class='ir-sec-title' id='meth_s2_hd'>Institutional Custody &amp; Compliance</h3>
+                <div class='ir-sec-line-sub' id='meth_s2_ln'></div>
+                <ul class='ir-bullet-list'>
+                  <li class='ir-bullet-item' id='meth_b2_1'><span class='ir-bullet-dot'></span><span
+                      class='ir-bullet-text'>Tier-1 institutional custodian and independent depository oversight</span>
+                  </li>
+                  <li class='ir-bullet-item' id='meth_b2_2'><span class='ir-bullet-dot'></span><span
+                      class='ir-bullet-text'>Periodic statutory auditing and monthly performance attribution
+                      reporting</span></li>
+                  <li class='ir-bullet-item' id='meth_b2_3'><span class='ir-bullet-dot'></span><span
+                      class='ir-bullet-text'>Strict operational separation of fund assets, governance, and
+                      management</span></li>
+                  <li class='ir-bullet-item' id='meth_b2_4'><span class='ir-bullet-dot'></span><span
+                      class='ir-bullet-text'>Continuous risk surveillance and real-time portfolio VaR monitoring</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class='ir-sec-state' id='meth_s3'>
+            <div class='ir-sec-split'>
+              <div class='ir-sec-col-card'>
+                <div class='ir-card' id='meth_s3_c'>
+                  <div class='ir-card-head'><span class='ir-card-badge'>HOW WE WORK</span>
+                    <div class='ir-card-crest'>IR</div>
+                  </div>
+                  <div class='ir-card-visual'>
+                    <div class='ir-card-icon'><span class='ir-card-ring'></span><span class='ir-card-monogram'>03</span>
+                    </div>
+                  </div>
+                  <div class='ir-card-footer'>
+                    <h4 class='ir-card-title'>Quantitative Desk</h4>
+                    <div class='ir-card-sub'>Execution Architecture</div>
+                  </div>
+                </div>
+              </div>
+              <div class='ir-sec-col-content'>
+                <h3 class='ir-sec-title' id='meth_s3_hd'>Market Cycle Discovery &amp; Trade Construction</h3>
+                <div class='ir-sec-line-sub' id='meth_s3_ln'></div>
+                <ul class='ir-bullet-list'>
+                  <li class='ir-bullet-item' id='meth_b3_1'><span class='ir-bullet-dot'></span><span
+                      class='ir-bullet-text'>Macro regime recognition identifying structural liquidity rotations across
+                      India</span></li>
+                  <li class='ir-bullet-item' id='meth_b3_2'><span class='ir-bullet-dot'></span><span
+                      class='ir-bullet-text'>Capturing mispriced derivative spreads during sudden volatility
+                      dislocations</span></li>
+                  <li class='ir-bullet-item' id='meth_b3_3'><span class='ir-bullet-dot'></span><span
+                      class='ir-bullet-text'>Multi-factor alpha modeling combining veteran CIO discretion with
+                      algorithmic models</span></li>
+                  <li class='ir-bullet-item' id='meth_b3_4'><span class='ir-bullet-dot'></span><span
+                      class='ir-bullet-text'>Automated execution routing minimizing market impact cost and trade
+                      slippage</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class='ir-sec-state' id='meth_s4'>
+            <div class='ir-center-stage'>
+              <div class='ir-center-eyebrow'><span class='ir-center-dot'></span><span>INTELLECTUAL CAPITAL &amp;
+                  RESEARCH</span><span class='ir-center-dot'></span></div>
+              <h2 class='ir-center-heading'>Empirical Rigor &amp; Strategy Insights</h2>
+              <p class='ir-center-desc'>Explore our empirical research papers, market cycle case studies, and
+                quantitative strategy insights where we share our knowledge, analytical frameworks, and market
+                perspectives.</p>
+              <div class='ir-center-pillars'>
+                <div>
+                  <div class='ir-pillar-stat'>Case Studies</div>
+                  <div class='ir-pillar-lbl'>Empirical Validations</div>
+                </div>
+                <div class='ir-pillar-sep'></div>
+                <div>
+                  <div class='ir-pillar-stat'>Strategy Blogs</div>
+                  <div class='ir-pillar-lbl'>Market Perspectives</div>
+                </div>
+                <div class='ir-pillar-sep'></div>
+                <div>
+                  <div class='ir-pillar-stat'>Whitepapers</div>
+                  <div class='ir-pillar-lbl'>Quantitative Research</div>
+                </div>
+              </div><a href='/insights' class='ir-sec-btn'>explore research &amp; insights &gt;&gt;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class='ir-contact-sec' id='contact-us'>
+      <div class='ir-contact-container'>
+        <div class='ir-contact-header'>
+          <h2 class='ir-sec-heading'>Contact Us</h2>
+          <div class='ir-sec-line'></div>
+          <p class='ir-contact-subheading'>Direct, confidential engagement with our senior investment committee for
+            qualifying mandates.</p>
+          <div class='ir-contact-btn-wrap'><button type='button' class='ir-sec-btn' id='irConnectBtn'>let's connect
+              &gt;&gt;</button></div>
+        </div>
+      </div>
+    </section>
+    <div class='ir-modal-overlay' id='irContactModal'>
+      <div class='ir-modal-card'><button type='button' class='ir-modal-close' id='irModalClose'>&times;</button>
+        <div class='ir-modal-head'><span class='ir-card-badge'>INITIATE DIALOGUE</span>
+          <h3 class='ir-modal-title'>Let's Connect</h3>
+          <p class='ir-modal-subtitle'>Please share your details below. Our capital allocation committee will connect
+            with you within 24 hours.</p>
+        </div>
+        <form id='irLeadForm' class='ir-modal-form'>
+          <div class='ir-form-group'><label class='ir-form-label'>Full Name *</label><input type='text' required
+              class='ir-form-input' placeholder='e.g. Vikramaditya Singhania' /></div>
+          <div class='ir-form-group'><label class='ir-form-label'>Email Address *</label><input type='email' required
+              class='ir-form-input' placeholder='e.g. vikram@familyoffice.com' /></div>
+          <div class='ir-form-group'><label class='ir-form-label'>Investor Profile *</label><select required
+              class='ir-form-input'>
+              <option value=''>Select Category</option>
+              <option value='Family Office'>Family Office</option>
+              <option value='Ultra HNI'>Ultra HNI</option>
+              <option value='Institutional Fund'>Institutional Fund / Asset Manager</option>
+              <option value='Registered Advisor'>Registered Wealth Advisor / MFO</option>
+              <option value='Other'>Other Qualifying Mandate</option>
+            </select></div>
+          <div class='ir-form-group'><label class='ir-form-label'>Brief Inquiry / Mandate Scope</label><textarea
+              class='ir-form-input ir-form-textarea' rows='3'
+              placeholder='Share your investment horizon, target allocation, or specific questions...'></textarea></div>
+          <button type='submit' class='ir-sec-btn ir-btn-submit'>submit mandate inquiry &gt;&gt;</button>
+        </form>
+        <div id='irFormSuccess' class='ir-form-success' style='display:none;'>
+          <div class='ir-card-badge'>INQUIRY RECEIVED</div>
+          <h4 class='ir-success-title'>Thank You for Reaching Out</h4>
+          <p class='ir-success-desc'>Our senior partners have received your details. A representative will contact you
+            with relevant private placement memorandums and mandate overviews.</p><button type='button'
+            class='ir-sec-btn' id='irSuccessCloseBtn'>close</button>
+        </div>
+      </div>
+    </div>
+    <footer class='ir-footer'>
+      <div class='ir-footer-inner'>
+        <div class='ir-footer-col ir-footer-brand'>
+          <div class='ir-brand-lockup'>
+            <div class='ir-card-crest'>IR</div><span class='ir-brand-name'>InvestRright</span>
+          </div>
+          <p class='ir-footer-tagline'>Institutional Alternative Investment Management &bull; SEBI Registered Category
+            III AIF</p>
+          <p class='ir-footer-copy'>&copy; 2026 InvestRright Capital Advisors LLP. All rights reserved.</p>
+          <div class='ir-footer-addr'>Bandra Kurla Complex (BKC), Mumbai, Maharashtra 400051</div>
+        </div>
+        <div class='ir-footer-col ir-footer-links'>
+          <h4 class='ir-footer-col-title'>Insights</h4>
+          <div class='ir-footer-col-line'></div>
+          <ul class='ir-footer-list'>
+            <li><a href='/insights#case-studies' class='ir-footer-link'>Case Studies</a></li>
+            <li><a href='/insights#blogs' class='ir-footer-link'>Blogs</a></li>
+          </ul>
+        </div>
+        <div class='ir-footer-col ir-footer-links'>
+          <h4 class='ir-footer-col-title'>About Us</h4>
+          <div class='ir-footer-col-line'></div>
+          <ul class='ir-footer-list'>
+            <li><a href='#investment-methodology' class='ir-footer-link'>Investment Methodology</a></li>
+            <li><a href='#our-team' class='ir-footer-link'>Our Team</a></li>
+            <li><a href='#our-story' class='ir-footer-link'>Our Story</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js" type="module"></script>
+</body>
+
+</html>

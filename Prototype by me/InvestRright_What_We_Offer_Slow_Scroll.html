@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InvestRright Capital | What We Offer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #FAF8F3;
+      color: #004020;
+      overflow-x: hidden;
+    }
+
+    .ir-master-wrap {
+      width: 100%;
+      min-height: 100vh;
+      position: relative;
+      background-color: #FAF8F3;
+    }
+
+    /* Header */
+    .ir-header {
+      position: sticky;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 76px;
+      background-color: #FAF8F3;
+      border-bottom: 1px solid rgba(188, 167, 99, 0.25);
+      box-shadow: 0 4px 20px rgba(0, 40, 20, 0.04);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+    }
+
+    .ir-nav-container {
+      width: 100%;
+      max-width: 1360px;
+      margin: 0 auto;
+      padding: 0 36px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .ir-logo-link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      height: 52px;
+    }
+
+    .ir-logo-svg {
+      width: 250px;
+      height: 65px;
+      display: block;
+    }
+
+    .ir-nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .ir-nav-link {
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      color: #004020;
+      text-decoration: none;
+      padding: 8px 4px;
+      position: relative;
+      transition: color 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .ir-nav-link:hover {
+      color: #BCA763;
+    }
+
+    .ir-nav-active {
+      border-bottom: 2px solid #BCA763;
+      color: #004020;
+      font-weight: 600;
+    }
+
+    .ir-arrow-icon {
+      font-size: 10px;
+      margin-left: 2px;
+      color: #BCA763;
+      transition: transform 0.2s ease;
+    }
+
+    .ir-dropdown {
+      position: relative;
+    }
+
+    .ir-dropdown-menu {
+      display: none;
+      position: absolute;
+      top: calc(100% + 12px);
+      left: 0;
+      min-width: 270px;
+      background-color: #FFFFFF;
+      border: 1px solid rgba(188, 167, 99, 0.35);
+      border-radius: 8px;
+      box-shadow: 0 16px 36px rgba(0, 40, 20, 0.12);
+      padding: 8px;
+      z-index: 1010;
+    }
+
+    .ir-dropdown:hover .ir-dropdown-menu {
+      display: block;
+    }
+
+    .ir-dropdown:hover .ir-arrow-icon {
+      transform: rotate(180deg);
+    }
+
+    .ir-dropdown-item {
+      display: block;
+      padding: 12px 14px;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.15s ease;
+    }
+
+    .ir-dropdown-item:hover {
+      background-color: #FAF8F2;
+    }
+
+    .ir-item-title {
+      display: block;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      color: #004020;
+      margin-bottom: 2px;
+    }
+
+    .ir-item-sub {
+      display: block;
+      font-family: 'Inter', sans-serif;
+      font-size: 11.5px;
+      color: #6B7C72;
+      line-height: 1.35;
+    }
+
+    .ir-nav-right {
+      display: flex;
+      align-items: center;
+    }
+
+    .ir-login-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 18px;
+      background-color: transparent;
+      color: #004020;
+      border: 1.5px solid #004020;
+      border-radius: 6px;
+      font-family: 'Inter', sans-serif;
+      font-size: 13.5px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .ir-login-btn:hover {
+      background-color: #004020;
+      color: #F4F1E1;
+      border-color: #004020;
+    }
+
+    /* Ticker */
+    .ir-ticker-bar {
+      width: 100%;
+      height: 38px;
+      background-color: #004020;
+      border-top: 1px solid rgba(188, 167, 99, 0.25);
+      border-bottom: 1px solid rgba(188, 167, 99, 0.25);
+      display: flex;
+      align-items: center;
+      position: relative;
+      z-index: 990;
+      overflow: hidden;
+    }
+
+    .ir-ticker-label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0 20px;
+      height: 100%;
+      background-color: #002D16;
+      border-right: 1px solid rgba(188, 167, 99, 0.4);
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: #BCA763;
+      white-space: nowrap;
+      flex-shrink: 0;
+      z-index: 10;
+    }
+
+    .ir-live-pulse {
+      width: 7px;
+      height: 7px;
+      background-color: #10B981;
+      border-radius: 50%;
+      box-shadow: 0 0 8px #10B981;
+    }
+
+    .ir-ticker-track-wrapper {
+      flex-grow: 1;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      align-items: center;
+      mask-image: linear-gradient(to right, transparent, black 20px, black 95%, transparent);
+    }
+
+    .ir-ticker-track {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      white-space: nowrap;
+      animation: irTickerScroll 35s linear infinite;
+    }
+
+    .ir-ticker-track:hover {
+      animation-play-state: paused;
+    }
+
+    @keyframes irTickerScroll {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .ir-ticker-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+    }
+
+    .ir-ticker-sym {
+      font-weight: 600;
+      color: #F4F1E1;
+      letter-spacing: 0.04em;
+    }
+
+    .ir-ticker-val {
+      color: #C0C8C2;
+    }
+
+    .ir-ticker-up {
+      color: #10B981;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 2px;
+    }
+
+    .ir-ticker-down {
+      color: #F87171;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 2px;
+    }
+
+    .ir-ticker-sep {
+      color: #BCA763;
+      opacity: 0.4;
+      font-size: 10px;
+    }
+
+    /* Hero Section Fold */
+    .ir-derivatives-hero {
+      position: relative;
+      width: 100%;
+      height: calc(100vh - 114px);
+      min-height: 640px;
+      max-height: 840px;
+      background-color: #031409;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      text-align: center;
+      padding-top: 110px;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+
+    .ir-dd-vignette-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at center, transparent 30%, rgba(2, 18, 9, 0.45) 75%, rgba(1, 10, 5, 0.85) 100%);
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .ir-wealth-content {
+      position: relative;
+      z-index: 10;
+      max-width: 1080px;
+      width: 100%;
+      padding: 0 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @keyframes irFadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(32px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .ir-wealth-heading {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(12px, 2.55vw, 42px);
+      font-weight: 600;
+      color: #DFBA73;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+      margin: 0 0 16px 0;
+      text-shadow: 0 4px 30px rgba(0, 0, 0, 0.9), 0 2px 8px rgba(0, 0, 0, 0.95);
+      white-space: nowrap;
+      overflow: visible;
+      max-width: 100%;
+      opacity: 0;
+      animation: irFadeInUp 1.45s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
+    }
+
+    .ir-wealth-subheading {
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: clamp(7.5px, 1.35vw, 16px);
+      font-weight: 400;
+      color: #E2DFD2;
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+      margin: 0 0 38px 0;
+      text-shadow: 0 2px 16px rgba(0, 0, 0, 0.95);
+      white-space: nowrap;
+      overflow: visible;
+      max-width: 100%;
+      opacity: 0;
+      animation: irFadeInUp 1.45s cubic-bezier(0.16, 1, 0.3, 1) 0.5s forwards;
+    }
+
+    .ir-scroll-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 28px;
+      background: rgba(2, 24, 12, 0.75);
+      color: #DFBA73;
+      border: 1.5px solid #BCA763;
+      border-radius: 9999px;
+      font-family: 'Inter', sans-serif;
+      font-size: 14.5px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-decoration: none;
+      cursor: pointer;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5), inset 0 0 12px rgba(188, 167, 99, 0.1);
+      opacity: 0;
+      animation: irFadeInUp 1.45s cubic-bezier(0.16, 1, 0.3, 1) 0.8s forwards;
+      transition: all 0.25s ease;
+    }
+
+    .ir-scroll-btn:hover {
+      background: #BCA763;
+      color: #002D16;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(188, 167, 99, 0.4);
+    }
+
+    .ir-scroll-arrow {
+      transition: transform 0.25s ease;
+    }
+
+    .ir-scroll-btn:hover .ir-scroll-arrow {
+      transform: translateY(3px);
+    }
+
+    /* ============================================================
+       WHAT WE OFFER SECTION - REDUCED HEIGHT & SEQUENCED
+       ============================================================ */
+    .ir-offer-section {
+      position: relative;
+      width: 100%;
+      background-color: #FAF8F3;
+      padding: 76px 0 88px 0;
+      box-sizing: border-box;
+      border-top: 1px solid rgba(188, 167, 99, 0.25);
+    }
+
+    .ir-offer-header {
+      width: 100%;
+      text-align: center;
+      max-width: 1200px;
+      margin: 0 auto 46px auto;
+      padding: 0 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .ir-offer-heading {
+      font-family: 'Playfair Display', 'Cinzel', serif;
+      font-size: clamp(30px, 3.2vw, 44px);
+      font-weight: 700;
+      color: #004020;
+      letter-spacing: -0.01em;
+      margin: 0 auto;
+      text-align: center;
+      display: block;
+      width: 100%;
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .ir-offer-heading.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .ir-offer-heading-line {
+      width: 50px;
+      height: 2px;
+      background: #BCA763;
+      margin: 14px auto 0 auto;
+      border-radius: 2px;
+    }
+
+    .ir-offer-split-wrap {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 0 40px;
+      display: flex;
+      align-items: center;
+      /* Left pane in absolute vertical center with Point 2 */
+      justify-content: space-between;
+      gap: 60px;
+      position: relative;
+    }
+
+    .ir-offer-left-pane {
+      flex: 0 0 calc(50% - 30px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 10px 20px 10px 0;
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 1.1s cubic-bezier(0.16, 1, 0.3, 1), transform 1.1s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .ir-offer-left-pane.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .ir-offer-left-title {
+      font-family: 'Cinzel', 'Playfair Display', serif;
+      font-size: clamp(32px, 3vw, 46px);
+      font-weight: 700;
+      color: #004020;
+      line-height: 1.18;
+      letter-spacing: -0.01em;
+      margin: 0 0 16px 0;
+    }
+
+    .ir-offer-left-divider {
+      width: 64px;
+      height: 2.5px;
+      background: linear-gradient(90deg, #BCA763, transparent);
+      margin-bottom: 20px;
+      border-radius: 2px;
+    }
+
+    .ir-offer-left-desc {
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(16px, 1.2vw, 18.5px);
+      font-weight: 400;
+      color: #2D4C38;
+      line-height: 1.6;
+      max-width: 480px;
+      margin: 0 0 26px 0;
+    }
+
+    .ir-offer-left-meta {
+      display: flex;
+      gap: 28px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(188, 167, 99, 0.25);
+    }
+
+    .ir-meta-stat-num {
+      font-family: 'Cinzel', serif;
+      font-size: 19px;
+      font-weight: 700;
+      color: #004020;
+    }
+
+    .ir-meta-stat-lbl {
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      color: #6B7C72;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    .ir-offer-right-pane {
+      flex: 0 0 calc(50% - 30px);
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+      padding: 10px 0;
+    }
+
+    .ir-offer-card {
+      background: #FFFFFF;
+      border: 1px solid rgba(188, 167, 99, 0.3);
+      border-radius: 12px;
+      padding: 30px 36px;
+      box-shadow: 0 10px 30px rgba(0, 64, 32, 0.04);
+      position: relative;
+      transition: opacity 1.25s cubic-bezier(0.16, 1, 0.3, 1), transform 1.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease, border-color 0.35s ease;
+      opacity: 0;
+      transform: translateY(36px);
+      overflow: hidden;
+    }
+
+    .ir-offer-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background: linear-gradient(180deg, #BCA763, transparent);
+      opacity: 0.6;
+      transition: opacity 0.3s ease, width 0.3s ease;
+    }
+
+    .ir-offer-card.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .ir-offer-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 42px rgba(0, 64, 32, 0.08);
+      border-color: rgba(188, 167, 99, 0.6);
+    }
+
+    .ir-offer-card:hover::before {
+      opacity: 1;
+      width: 6px;
+    }
+
+    .ir-card-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 14px;
+    }
+
+    .ir-card-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      color: #BCA763;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .ir-card-num {
+      font-family: 'Cinzel', serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: rgba(188, 167, 99, 0.45);
+      letter-spacing: 0.05em;
+    }
+
+    .ir-card-content {
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(15.5px, 1.15vw, 17.5px);
+      font-weight: 500;
+      color: #004020;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .ir-card-highlight {
+      font-weight: 700;
+      color: #002D16;
+      border-bottom: 1.5px solid rgba(188, 167, 99, 0.4);
+      padding-bottom: 1px;
+    }
+
+    .ir-offer-cta-wrap {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 46px;
+      position: relative;
+      z-index: 20;
+    }
+
+    .ir-offer-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 15px 36px;
+      background-color: #004020;
+      color: #F4F1E1;
+      border: 1.5px solid #BCA763;
+      border-radius: 8px;
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 10px 28px rgba(0, 64, 32, 0.14);
+    }
+
+    .ir-offer-cta-btn:hover {
+      background-color: #BCA763;
+      color: #002D16;
+      border-color: #004020;
+      transform: translateY(-2px);
+      box-shadow: 0 16px 36px rgba(188, 167, 99, 0.4);
+    }
+
+    .ir-cta-arrow {
+      color: #BCA763;
+      font-size: 14px;
+      font-weight: 700;
+      transition: transform 0.25s ease, color 0.25s ease;
+    }
+
+    .ir-offer-cta-btn:hover .ir-cta-arrow {
+      color: #002D16;
+      transform: translateX(4px);
+    }
+
+    @media (max-width: 991px) {
+      .ir-offer-section {
+        padding: 60px 0 70px 0;
+      }
+
+      .ir-offer-split-wrap {
+        flex-direction: column;
+        gap: 36px;
+        padding: 0 24px;
+        align-items: stretch;
+      }
+
+      .ir-offer-left-pane {
+        flex: 1 1 100%;
+        padding: 0 0 16px 0;
+      }
+
+      .ir-offer-right-pane {
+        flex: 1 1 100%;
+        gap: 18px;
+        padding: 0;
+      }
+
+      .ir-offer-card {
+        padding: 24px 24px;
+      }
+
+      .ir-offer-cta-wrap {
+        margin-top: 36px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="ir-master-wrap">
+    <!-- Header -->
+    <header class="ir-header">
+      <div class="ir-nav-container">
+        <a href="/" class="ir-logo-link">
+          <svg class="ir-logo-svg" viewBox="0 0 340 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(4, 5)">
+              <rect x="2" y="2" width="56" height="56" rx="8" fill="#002D16" stroke="#BCA763" stroke-width="1.8" />
+              <path d="M14 44 L24 16 L36 16 L46 44" stroke="#BCA763" stroke-width="2.6" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M20 34 L40 34" stroke="#D4AF37" stroke-width="2.2" stroke-linecap="round" />
+              <path d="M30 16 L30 44" stroke="#FAF8F3" stroke-width="2" stroke-linecap="round" />
+              <circle cx="30" cy="11" r="3.2" fill="#D4AF37" />
+              <path d="M8 8 L14 8 M8 8 L8 14" stroke="#BCA763" stroke-width="1.6" stroke-linecap="round" />
+              <path d="M52 8 L46 8 M52 8 L52 14" stroke="#BCA763" stroke-width="1.6" stroke-linecap="round" />
+              <path d="M8 52 L14 52 M8 52 L8 46" stroke="#BCA763" stroke-width="1.6" stroke-linecap="round" />
+              <path d="M52 52 L46 52 M52 52 L52 46" stroke="#BCA763" stroke-width="1.6" stroke-linecap="round" />
+            </g>
+            <g transform="translate(74, 9)">
+              <text x="0" y="32" font-family="'Cinzel', 'Playfair Display', Georgia, serif" font-size="28"
+                font-weight="700" letter-spacing="0.04em" fill="#004020">Invest<tspan fill="#BCA763">R</tspan>
+                right</text>
+              <text x="1.5" y="47" font-family="'Inter', -apple-system, sans-serif" font-size="8.5" font-weight="700"
+                letter-spacing="0.32em" fill="#004020" opacity="0.85">CAPITAL &bull; AIF CAT III</text>
+            </g>
+          </svg>
+        </a>
+
+        <nav class="ir-nav-menu">
+          <a href="#" class="ir-nav-link ir-nav-active">Overview</a>
+          <div class="ir-dropdown">
+            <a href="#" class="ir-nav-link">Our Strategies <span class="ir-arrow-icon">&#9662;</span></a>
+            <div class="ir-dropdown-menu">
+              <a href="#" class="ir-dropdown-item">
+                <span class="ir-item-title">Infinity Growth Fund - I</span>
+                <span class="ir-item-sub">Long-short equity derivatives execution</span>
+              </a>
+              <a href="#" class="ir-dropdown-item">
+                <span class="ir-item-title">Quantitative Alpha</span>
+                <span class="ir-item-sub">Statistical arbitrage & factor models</span>
+              </a>
+            </div>
+          </div>
+          <a href="#" class="ir-nav-link">Performance</a>
+          <a href="#" class="ir-nav-link">Risk Governance</a>
+          <a href="#" class="ir-nav-link">About Us</a>
+        </nav>
+
+        <div class="ir-nav-right">
+          <a href="#investor-login" class="ir-login-btn">
+            <span class="ir-lock-icon">&#128274;</span> Investor Login
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Ticker -->
+    <div class="ir-ticker-bar">
+      <div class="ir-ticker-label">
+        <span class="ir-live-pulse"></span> LIVE MARKETS
+      </div>
+      <div class="ir-ticker-track-wrapper">
+        <div class="ir-ticker-track">
+          <div class="ir-ticker-item"><span class="ir-ticker-sym">NIFTY 50</span> <span
+              class="ir-ticker-val">24,835.40</span> <span class="ir-ticker-up">&#9650; +0.48%</span></div>
+          <span class="ir-ticker-sep">&diams;</span>
+          <div class="ir-ticker-item"><span class="ir-ticker-sym">BANK NIFTY</span> <span
+              class="ir-ticker-val">52,410.85</span> <span class="ir-ticker-up">&#9650; +0.62%</span></div>
+          <span class="ir-ticker-sep">&diams;</span>
+          <div class="ir-ticker-item"><span class="ir-ticker-sym">INDIA VIX</span> <span
+              class="ir-ticker-val">12.84</span> <span class="ir-ticker-down">&#9660; -3.12%</span></div>
+          <span class="ir-ticker-sep">&diams;</span>
+          <div class="ir-ticker-item"><span class="ir-ticker-sym">GOLD (10g)</span> <span
+              class="ir-ticker-val">&#8377;74,850</span> <span class="ir-ticker-up">&#9650; +0.22%</span></div>
+          <span class="ir-ticker-sep">&diams;</span>
+          <div class="ir-ticker-item"><span class="ir-ticker-sym">USD/INR</span> <span
+              class="ir-ticker-val">83.94</span> <span class="ir-ticker-down">&#9660; -0.04%</span></div>
+          <span class="ir-ticker-sep">&diams;</span>
+          <div class="ir-ticker-item"><span class="ir-ticker-sym">10Y G-SEC</span> <span
+              class="ir-ticker-val">6.88%</span> <span class="ir-ticker-down">&#9660; -0.01%</span></div>
+          <span class="ir-ticker-sep">&diams;</span>
+          <div class="ir-ticker-item"><span class="ir-ticker-sym">NIFTY 50</span> <span
+              class="ir-ticker-val">24,835.40</span> <span class="ir-ticker-up">&#9650; +0.48%</span></div>
+          <span class="ir-ticker-sep">&diams;</span>
+          <div class="ir-ticker-item"><span class="ir-ticker-sym">BANK NIFTY</span> <span
+              class="ir-ticker-val">52,410.85</span> <span class="ir-ticker-up">&#9650; +0.62%</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Fold -->
+    <section class="ir-derivatives-hero">
+      <div class="ir-dd-vignette-layer"></div>
+      <div class="ir-wealth-content">
+        <h1 class="ir-wealth-heading">Navigating Every Market Cycle with Institutional Precision</h1>
+        <p class="ir-wealth-subheading">A SEBI-registered AIF delivering sophisticated risk management and capital
+          preservation for high-net-worth portfolios.</p>
+        <a href="#what-we-offer" id="irScrollBtn" class="ir-scroll-btn">
+          <span>Explore</span>
+          <span class="ir-scroll-arrow">&#9662;</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         WHAT WE OFFER SECTION
+         ============================================================ -->
+    <section class="ir-offer-section" id="what-we-offer">
+      <div class="ir-offer-header">
+        <h2 class="ir-offer-heading">What we offer</h2>
+        <div class="ir-offer-heading-line"></div>
+      </div>
+
+      <div class="ir-offer-split-wrap">
+        <div class="ir-offer-left-pane" id="irOfferLeftPane">
+          <h3 class="ir-offer-left-title">Infinity Growth Fund - I</h3>
+          <div class="ir-offer-left-divider"></div>
+          <p class="ir-offer-left-desc">A multi-strategy AIF Engineered for evolving market cycles.</p>
+          <div class="ir-offer-left-meta">
+            <div class="ir-meta-item">
+              <div class="ir-meta-stat-num">CAT III</div>
+              <div class="ir-meta-stat-lbl">SEBI Registered</div>
+            </div>
+            <div class="ir-meta-item">
+              <div class="ir-meta-stat-num">Long-Short</div>
+              <div class="ir-meta-stat-lbl">Equity Execution</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ir-offer-right-pane">
+          <div class="ir-offer-card" data-card="1">
+            <div class="ir-card-head">
+              <span class="ir-card-badge">INVESTOR FIRST STRUCTURE</span>
+              <span class="ir-card-num">01</span>
+            </div>
+            <p class="ir-card-content">
+              Three return bands. Three different fee structures. One principle: <span
+                class="ir-card-highlight">Investor First</span>.
+            </p>
+          </div>
+
+          <div class="ir-offer-card" data-card="2">
+            <div class="ir-card-head">
+              <span class="ir-card-badge">CORE ENGINE</span>
+              <span class="ir-card-num">02</span>
+            </div>
+            <p class="ir-card-content">
+              <span class="ir-card-highlight">Human Insight</span>, quantitative Systems, &amp; Artificial Intelligence
+              combined into one disciplined engine.
+            </p>
+          </div>
+
+          <div class="ir-offer-card" data-card="3">
+            <div class="ir-card-head">
+              <span class="ir-card-badge">RISK &amp; PRESERVATION</span>
+              <span class="ir-card-num">03</span>
+            </div>
+            <p class="ir-card-content">
+              Position Sizing, liquidity discipline &amp; hedging are designed to keep capital deployment <span
+                class="ir-card-highlight">adaptive &amp; risk aware</span>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="ir-offer-cta-wrap">
+        <a href="#fund-details" class="ir-offer-cta-btn">
+          <span>Know more &gt;&gt;</span>
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    (function () {
+      function initOfferScrollAnimation() {
+        var section = document.getElementById('what-we-offer');
+        var heading = document.querySelector('.ir-offer-heading');
+        var leftPane = document.getElementById('irOfferLeftPane');
+        var cards = document.querySelectorAll('.ir-offer-card');
+        var leftAppeared = false;
+        var sectionTriggered = false;
+
+        if ('IntersectionObserver' in window && section) {
+          var sectionObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting && !sectionTriggered) {
+                sectionTriggered = true;
+                if (heading) heading.classList.add('is-visible');
+                if (leftPane) {
+                  setTimeout(function () {
+                    leftPane.classList.add('is-visible');
+                    leftAppeared = true;
+                  }, 200);
+                }
+              }
+            });
+          }, {
+            threshold: 0.15,
+            rootMargin: '0px 0px -40px 0px'
+          });
+          sectionObserver.observe(section);
+
+          var cardObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                var card = entry.target;
+                var cardIdx = parseInt(card.getAttribute('data-card') || '1', 10);
+                var delay = 0;
+                if (cardIdx === 1) {
+                  delay = leftAppeared ? 350 : 1000;
+                } else if (cardIdx === 2) {
+                  delay = 450;
+                } else if (cardIdx === 3) {
+                  delay = 550;
+                }
+                setTimeout(function () {
+                  card.classList.add('is-visible');
+                }, delay);
+                cardObserver.unobserve(card);
+              }
+            });
+          }, {
+            threshold: 0.25,
+            rootMargin: '0px 0px -40px 0px'
+          });
+
+          cards.forEach(function (card) {
+            cardObserver.observe(card);
+          });
+        } else {
+          if (heading) heading.classList.add('is-visible');
+          if (leftPane) leftPane.classList.add('is-visible');
+          cards.forEach(function (c) { c.classList.add('is-visible'); });
+        }
+      }
+
+      function initSmoothScroll() {
+        var btn = document.getElementById('irScrollBtn');
+        if (btn) {
+          btn.addEventListener('click', function (e) {
+            e.preventDefault();
+            var target = document.getElementById('what-we-offer');
+            if (target) {
+              var targetY = target.getBoundingClientRect().top + window.pageYOffset;
+              var startY = window.pageYOffset;
+              var distance = targetY - startY;
+              var duration = 1250;
+              var startTime = null;
+              function step(now) {
+                if (!startTime) startTime = now;
+                var elapsed = now - startTime;
+                var t = Math.min(elapsed / duration, 1);
+                var ease = t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+                window.scrollTo(0, startY + (distance * ease));
+                if (elapsed < duration) {
+                  window.requestAnimationFrame(step);
+                } else {
+                  window.scrollTo(0, targetY);
+                }
+              }
+              window.requestAnimationFrame(step);
+            }
+          });
+        }
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function () {
+          initOfferScrollAnimation();
+          initSmoothScroll();
+        });
+      } else {
+        initOfferScrollAnimation();
+        initSmoothScroll();
+      }
+    })();
+  </script>
+</body>
+
+</html>

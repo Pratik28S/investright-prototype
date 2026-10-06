@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InvestRright Capital | What We Offer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #FAF8F3;
+      color: #004020;
+      overflow-x: hidden;
+    }
+
+    .ir-master-wrap {
+      width: 100%;
+      min-height: 100vh;
+      position: relative;
+      background-color: #FAF8F3;
+    }
+
+    /* Header */
+    .ir-header {
+      position: sticky;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 76px;
+      background-color: #FAF8F3;
+      border-bottom: 1px solid rgba(188, 167, 99, 0.25);
+      box-shadow: 0 4px 20px rgba(0, 40, 20, 0.04);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+    }
+
+    .ir-nav-container {
+      width: 100%;
+      max-width: 1360px;
+      margin: 0 auto;
+      padding: 0 36px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .ir-logo-link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      height: 52px;
+    }
+
+    .ir-logo-svg {
+      width: 250px;
+      height: 65px;
+      display: block;
+    }
+
+    .ir-nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .ir-nav-link {
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      color: #004020;
+      text-decoration: none;
+      padding: 8px 4px;
+      position: relative;
+      transition: color 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .ir-nav-link:hover {
+      color: #BCA763;
+    }
+
+    .ir-nav-active {
+      border-bottom: 2px solid #BCA763;
+      color: #004020;
+      font-weight: 600;
+    }
+
+    .ir-arrow-icon {
+      font-size: 10px;
+      margin-left: 2px;
+      color: #BCA763;
+      transition: transform 0.2s ease;
+    }
+
+    .ir-dropdown {
+      position: relative;
+    }
+
+    .ir-dropdown-menu {
+      display: none;
+      position: absolute;
+      top: calc(100% + 12px);
+      left: 0;
+      min-width: 270px;
+      background-color: #FFFFFF;
+      border: 1px solid rgba(188, 167, 99, 0.35);
+      border-radius: 8px;
+      box-shadow: 0 16px 36px rgba(0, 40, 20, 0.12);
+      padding: 8px;
+      z-index: 1010;
+    }
+
+    .ir-dropdown:hover .ir-dropdown-menu {
+      display: block;
+    }
+
+    .ir-dropdown:hover .ir-arrow-icon {
+      transform: rotate(180deg);
+    }
+
+    .ir-dropdown-item {
+      display: block;
+      padding: 12px 14px;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.15s ease;
+    }
+
+    .ir-dropdown-item:hover {
+      background-color: #FAF8F2;
+    }
+
+    .ir-item-title {
+      display: block;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      color: #004020;
+      margin-bottom: 2px;
+    }
+
+    .ir-item-sub {
+      display: block;
+      font-family: 'Inter', sans-serif;
+      font-size: 11.5px;
+      color: #6B7C72;
+      line-height: 1.35;
+    }
+
+    .ir-nav-right {
+      display: flex;
+      align-items: center;
+    }
+
+    .ir-login-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 18px;
+      background-color: transparent;
+      color: #004020;
+      border: 1.5px solid #004020;
+      border-radius: 6px;
+      font-family: 'Inter', sans-serif;
+      font-size: 13.5px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .ir-login-btn:hover {
+      background-color: #004020;
+      color: #F4F1E1;
+      border-color: #004020;
+    }
+
+    /* Ticker */
+    .ir-ticker-bar {
+      width: 100%;
+      height: 38px;
+      background-color: #004020;
+      border-top: 1px solid rgba(188, 167, 99, 0.25);
+      border-bottom: 1px solid rgba(188, 167, 99, 0.25);
+      display: flex;
+      align-items: center;
+      position: relative;
+      z-index: 990;
+      overflow: hidden;
+    }
+
+    .ir-ticker-label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0 20px;
+      height: 100%;
+      background-color: #002D16;
+      border-right: 1px solid rgba(188, 167, 99, 0.4);
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: #BCA763;
+      white-space: nowrap;
+      flex-shrink: 0;
+      z-index: 10;
+    }
+
+    .ir-live-pulse {
+      width: 7px;
+      height: 7px;
+      background-color: #10B981;
+      border-radius: 50%;
+      box-shadow: 0 0 8px #10B981;
+    }
+
+    .ir-ticker-track-wrapper {
+      flex-grow: 1;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      align-items: center;
+      mask-image: linear-gradient(to right, transparent, black 20px, black 95%, transparent);
+    }
+
+    .ir-ticker-track {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      white-space: nowrap;
+      animation: irTickerScroll 35s linear infinite;
+    }
+
+    .ir-ticker-track:hover {
+      animation-play-state: paused;
+    }
+
+    @keyframes irTickerScroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .ir-ticker-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+    }
+
+    .ir-ticker-sym {
+      font-weight: 600;
+      color: #F4F1E1;
+      letter-spacing: 0.04em;
+    }
+
+    .ir-ticker-val {
+      color: #C0C8C2;
+    }
+
+    .ir-ticker-up {
+      color: #10B981;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 2px;
+    }
+
+    .ir-ticker-down {
+      color: #F87171;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 2px;
+    }
+
+    .ir-ticker-sep {
+      color: #BCA763;
+      opacity: 0.4;
+      font-size: 10px;
+    }
+
+    /* Hero Section Fold */
+    .ir-derivatives-hero {
+      position: relative;
+      width: 100%;
+      height: calc(100vh - 114px);
+      min-height: 640px;
+      max-height: 840px;
+      background-color: #031409;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      text-align: center;
+      padding-top: 110px;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+
+    .ir-dd-vignette-layer {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: radial-gradient(circle at center, transparent 30%, rgba(2, 18, 9, 0.45) 75%, rgba(1, 10, 5, 0.85) 100%);
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .ir-wealth-content {
+      position: relative;
+      z-index: 10;
+      max-width: 1080px;
+      width: 100%;
+      padding: 0 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @keyframes irFadeInUp {
+      from { opacity: 0; transform: translateY(32px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .ir-wealth-heading {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(12px, 2.55vw, 42px);
+      font-weight: 600;
+      color: #DFBA73;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+      margin: 0 0 16px 0;
+      text-shadow: 0 4px 30px rgba(0, 0, 0, 0.9), 0 2px 8px rgba(0, 0, 0, 0.95);
+      white-space: nowrap;
+      overflow: visible;
+      max-width: 100%;
+      opacity: 0;
+      animation: irFadeInUp 1.45s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
+    }
+
+    .ir-wealth-subheading {
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: clamp(7.5px, 1.35vw, 16px);
+      font-weight: 400;
+      color: #E2DFD2;
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+      margin: 0 0 38px 0;
+      text-shadow: 0 2px 16px rgba(0, 0, 0, 0.95);
+      white-space: nowrap;
+      overflow: visible;
+      max-width: 100%;
+      opacity: 0;
+      animation: irFadeInUp 1.45s cubic-bezier(0.16, 1, 0.3, 1) 0.5s forwards;
+    }
+
+    .ir-scroll-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 28px;
+      background: rgba(2, 24, 12, 0.75);
+      color: #DFBA73;
+      border: 1.5px solid #BCA763;
+      border-radius: 9999px;
+      font-family: 'Inter', sans-serif;
+      font-size: 14.5px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-decoration: none;
+      cursor: pointer;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5), inset 0 0 12px rgba(188, 167, 99, 0.1);
+      opacity: 0;
+      animation: irFadeInUp 1.45s cubic-bezier(0.16, 1, 0.3, 1) 0.8s forwards;
+      transition: all 0.25s ease;
+    }
+
+    .ir-scroll-btn:hover {
+      background: #BCA763;
+      color: #002D16;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(188, 167, 99, 0.4);
+    }
+
+    .ir-scroll-arrow {
+      transition: transform 0.25s ease;
+    }
+
+    .ir-scroll-btn:hover .ir-scroll-arrow {
+      transform: translateY(3px);
+    }
+
+    /* ============================================================
+       WHAT WE OFFER SECTION - REDUCED HEIGHT & SEQUENCED
+       ============================================================ */
+    .ir-offer-section {
+      position: relative;
+      width: 100%;
+      background-color: #FAF8F3;
+      padding: 76px 0 88px 0;
+      box-sizing: border-box;
+      border-top: 1px solid rgba(188, 167, 99, 0.25);
+    }
+
+    .ir-offer-header {
+      width: 100%;
+      text-align: center;
+      max-width: 1200px;
+      margin: 0 auto 46px auto;
+      padding: 0 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .ir-offer-heading {
+      font-family: 'Playfair Display', 'Cinzel', serif;
+      font-size: clamp(30px, 3.2vw, 44px);
+      font-weight: 700;
+      color: #004020;
+      letter-spacing: -0.01em;
+      margin: 0 auto;
+      text-align: center;
+      display: block;
+      width: 100%;
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .ir-offer-heading.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .ir-offer-heading-line {
+      width: 50px;
+      height: 2px;
+      background: #BCA763;
+      margin: 14px auto 0 auto;
+      border-radius: 2px;
+    }
+
+    .ir-offer-split-wrap {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 0 40px;
+      display: flex;
+      align-items: center; /* Left pane in absolute vertical center with Point 2 */
+      justify-content: space-between;
+      gap: 60px;
+      position: relative;
+    }
+
+    .ir-offer-left-pane {
+      flex: 0 0 calc(50% - 30px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 10px 20px 10px 0;
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 1.1s cubic-bezier(0.16, 1, 0.3, 1), transform 1.1s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .ir-offer-left-pane.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .ir-offer-left-title {
+      font-family: 'Cinzel', 'Playfair Display', serif;
+      font-size: clamp(32px, 3vw, 46px);
+      font-weight: 700;
+      color: #004020;
+      line-height: 1.18;
+      letter-spacing: -0.01em;
+      margin: 0 0 16px 0;
+    }
+
+    .ir-offer-left-divider {
+      width: 64px;
+      height: 2.5px;
+      background: linear-gradient(90deg, #BCA763, transparent);
+      margin-bottom: 20px;
+      border-radius: 2px;
+    }
+
+    .ir-offer-left-desc {
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(16px, 1.2vw, 18.5px);
+      font-weight: 400;
+      color: #2D4C38;
+      line-height: 1.6;
+      max-width: 480px;
+      margin: 0 0 26px 0;
+    }
+
+    .ir-offer-left-meta {
+      display: flex;
+      gap: 28px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(188, 167, 99, 0.25);
+    }
+
+    .ir-meta-stat-num {
+      font-family: 'Cinzel', serif;
+      font-size: 19px;
+      font-weight: 700;
+      color: #004020;
+    }
+
+    .ir-meta-stat-lbl {
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      color: #6B7C72;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    .ir-offer-right-pane {
+      flex: 0 0 calc(50% - 30px);
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+      padding: 10px 0;
+    }
+
+    .ir-offer-card {
+      background: #FFFFFF;
+      border: 1px solid rgba(188, 167, 99, 0.3);
+      border-radius: 12px;
+      padding: 30px 36px;
+      box-shadow: 0 10px 30px rgba(0, 64, 32, 0.04);
+      position: relative;
+      transition: opacity 1.25s cubic-bezier(0.16, 1, 0.3, 1), transform 1.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease, border-color 0.35s ease;
+      opacity: 0;
+      transform: translateY(36px);
+      overflow: hidden;
+    }
+
+    .ir-offer-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background: linear-gradient(180deg, #BCA763, transparent);
+      opacity: 0.6;
+      transition: opacity 0.3s ease, width 0.3s ease;
+    }
+
+    .ir-offer-card.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .ir-offer-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 42px rgba(0, 64, 32, 0.08);
+      border-color: rgba(188, 167, 99, 0.6);
+    }
+
+    .ir-offer-card:hover::before {
+      opacity: 1;
+      width: 6px;
+    }
+
+    .ir-card-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 14px;
+    }
+
+    .ir-card-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      color: #BCA763;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .ir-card-num {
+      font-family: 'Cinzel', serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: rgba(188, 167, 99, 0.45);
+      letter-spacing: 0.05em;
+    }
+
+    .ir-card-content {
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(15.5px, 1.15vw, 17.5px);
+      font-weight: 500;
+      color: #004020;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .ir-card-highlight {
+      font-weight: 700;
+      color: #002D16;
+      border-bottom: 1.5px solid rgba(188, 167, 99, 0.4);
+      padding-bottom: 1px;
+    }
+
+    .ir-offer-cta-wrap {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 46px;
+      position: relative;
+      z-index: 20;
+    }
+
+    .ir-offer-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 15px 36px;
+      background-color: #004020;
+      color: #F4F1E1;
+      border: 1.5px solid #BCA763;
+      border-radius: 8px;
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 10px 28px rgba(0, 64, 32, 0.14);
+    }
+
+    .ir-offer-cta-btn:hover {
+      background-color: #BCA763;
+      color: #002D16;
+      border-color: #004020;
+      transform: translateY(-2px);
+      box-shadow: 0 16px 36px rgba(188, 167, 99, 0.4);
+    }
+
+    .ir-cta-arrow {
+      color: #BCA763;
+      font-size: 14px;
+      font-weight: 700;
+      transition: transform 0.25s ease, color 0.25s ease;
+    }
+
+    .ir-offer-cta-btn:hover .ir-cta-arrow {
+      color: #002D16;
+      transform: translateX(4px);
+    }
+
+    @media (max-width: 991px) {
+      .ir-offer-section {
+        padding: 60px 0 70px 0;
+      }
+      .ir-offer-split-wrap {
+        flex-direction: column;
+        gap: 36px;
+        padding: 0 24px;
+        align-items: stretch;
+      }
+      .ir-offer-left-pane {
+        flex: 1 1 100%;
+        padding: 0 0 16px 0;
+      }
+      .ir-offer-right-pane {
+        flex: 1 1 100%;
+        gap: 18px;
+        padding: 0;
+      }
+      .ir-offer-card {
+        padding: 24px 24px;
+      }
+      .ir-offer-cta-wrap {
+        margin-top: 36px;
+      }
+    }
+  
+ html,body{overflow-x:clip!important} .ir-master-wrap,.ir-hero-and-next-wrap,div:has(>.ir-team-section),.w-embed:has(>.ir-team-section){overflow-x:clip!important;overflow-y:visible!important;width:100%!important} .ir-team-section{ position:relative;width:100%;height:192vh;background:#FAF8F3;border-top:1px solid rgba(188,167,99,.25);box-sizing:border-box;} .ir-team-sticky-viewport{ position:-webkit-sticky;position:sticky;top:0;left:0;width:100%;height:100vh;overflow:hidden;background:#FAF8F3;display:flex;flex-direction:column;justify-content:center;align-items:center;box-sizing:border-box;padding:24px;} /* Watermark:Sized so INVESTRRIGHT fits completely on screen without clipping */ .ir-team-watermark{ position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:'Cinzel',serif;font-size:min(5vw,68px);font-weight:700;color:rgba(0,64,32,.022);letter-spacing:0.05em;text-align:center;max-width:88vw;pointer-events:none;user-select:none;white-space:nowrap;z-index:1;} /* Centered Persistent Title 'Our Team' */ .ir-team-top-header{ position:absolute;top:92px;left:0;width:100%;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:60;pointer-events:none;} .ir-team-main-heading{ font-family:'Playfair Display','Cinzel',serif;font-size:clamp(28px,3vw,40px);font-weight:700;color:#004020;letter-spacing:-0.01em;margin:0;text-align:center;line-height:1.2;} .ir-team-heading-line{ width:50px;height:2px;background:#BCA763;margin:10px auto 0 auto;border-radius:2px;} /* Master Stage Area */ .ir-team-stage{ position:relative;width:100%;max-width:1180px;height:74vh;min-height:460px;max-height:620px;margin-top:72px;display:flex;align-items:center;justify-content:center;z-index:10;} /* State View Panes */ .ir-team-state-view{ position:absolute;inset:0;display:flex;align-items:center;box-sizing:border-box;opacity:0;pointer-events:none;transition:opacity .35s ease,transform .35s ease;} /* Split-screen Layout */ .ir-team-split{ width:100%;height:100%;display:flex;align-items:center;justify-content:space-between;gap:56px;} .ir-team-col-profile{ flex:0 0 340px;display:flex;justify-content:center;} .ir-team-col-content{ flex:1 1 0%;display:flex;flex-direction:column;justify-content:center;} /* Profile Card */ .ir-profile-card{ position:relative;width:100%;max-width:320px;height:410px;background:#FFF;border-radius:14px;border:1px solid rgba(188,167,99,.38);box-shadow:0 16px 40px rgba(0,64,32,.07);display:flex;flex-direction:column;justify-content:space-between;padding:22px 18px;box-sizing:border-box;} .ir-profile-card::before{ content:'';position:absolute;inset:8px;border:1px solid rgba(188,167,99,.16);border-radius:10px;pointer-events:none;} .ir-profile-head{ display:flex;justify-content:space-between;align-items:center;position:relative;z-index:2;} .ir-profile-badge{ font-family:'Inter',sans-serif;font-size:11px;font-weight:700;letter-spacing:.14em;color:#BCA763;background:rgba(188,167,99,.1);padding:4px 8px;border-radius:4px;border:1px solid rgba(188,167,99,.25);} .ir-profile-crest{ width:26px;height:26px;border:1.5px solid #BCA763;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:10px;font-weight:700;color:#BCA763;} .ir-profile-visual{ position:relative;width:100%;height:180px;display:flex;align-items:center;justify-content:center;} .ir-portrait-icon{ width:92px;height:92px;border-radius:50%;background:linear-gradient(145deg,#FAF8F3,#EDE8DC);border:2px solid rgba(188,167,99,.45);box-shadow:0 10px 24px rgba(0,64,32,.06);display:flex;align-items:center;justify-content:center;position:relative;} .ir-portrait-monogram{ font-family:'Cinzel',serif;font-size:30px;font-weight:700;color:#004020;} .ir-portrait-ring{ position:absolute;inset:-5px;border:1px dashed rgba(188,167,99,.35);border-radius:50%;} .ir-profile-footer{ text-align:center;border-top:1px solid rgba(188,167,99,.2);padding-top:10px;position:relative;z-index:2;} .ir-profile-name{ font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:#004020;margin:0 0 2px 0;} .ir-profile-role{ font-family:'Inter',sans-serif;font-size:11px;font-weight:600;color:#BCA763;letter-spacing:.08em;text-transform:uppercase;} /* Content Column */ .ir-content-title{ font-family:'Playfair Display',serif;font-size:clamp(28px,2.8vw,38px);font-weight:700;color:#004020;line-height:1.15;margin:0 0 10px 0;} .ir-content-line{ width:44px;height:2px;background:#BCA763;border-radius:2px;margin-bottom:20px;} /* True Bullet Points List */ .ir-bullet-list{ list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:14px;} .ir-bullet-item{ display:flex;align-items:center;gap:14px;padding:2px 0;background:transparent;opacity:0;transform:translateY(16px);transition:opacity .35s ease,transform .35s ease;box-sizing:border-box;} /* Gold Bullet Point Dot */ .ir-bullet-dot{ width:8px;height:8px;background:#BCA763;border-radius:50%;flex-shrink:0;box-shadow:0 0 8px rgba(188,167,99,.5);} .ir-bullet-text{ font-family:'Inter',sans-serif;font-size:clamp(15px,1.2vw,17.5px);font-weight:600;color:#004020;line-height:1.45;margin:0;letter-spacing:-0.01em;} /* State 3 Center View */ .ir-team-center{ width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 20px;box-sizing:border-box;} .ir-center-eyebrow{ display:inline-flex;align-items:center;gap:8px;font-family:'Inter',sans-serif;font-size:11px;font-weight:700;color:#BCA763;letter-spacing:.16em;text-transform:uppercase;margin-bottom:12px;} .ir-center-tag-dot{ width:6px;height:6px;background:#BCA763;border-radius:50%;} .ir-center-headline{ font-family:'Playfair Display',serif;font-size:clamp(30px,3.6vw,52px);font-weight:700;color:#004020;letter-spacing:-.02em;line-height:1.15;max-width:840px;margin:0 auto 14px auto;} .ir-center-subtext{ font-family:'Inter',sans-serif;font-size:clamp(14px,1.1vw,16px);color:#2D4C38;line-height:1.6;max-width:660px;margin:0 auto 24px auto;} .ir-center-pillars{ display:flex;justify-content:center;gap:56px;margin-bottom:26px;padding-bottom:20px;border-bottom:1px solid rgba(188,167,99,.25);width:100%;max-width:700px;} .ir-pillar-stat{ font-family:'Cinzel',serif;font-size:clamp(18px,1.6vw,24px);font-weight:700;color:#004020;} .ir-pillar-lbl{ font-family:'Inter',sans-serif;font-size:11px;font-weight:600;color:#6B7C72;letter-spacing:.08em;text-transform:uppercase;} .ir-pillar-sep{ width:1px;height:28px;background:rgba(188,167,99,.3);} .ir-team-btn{ display:inline-flex;align-items:center;gap:10px;padding:14px 34px;background:linear-gradient(135deg,#D4AF37 0%,#BCA763 100%);color:#002D16;border:1.5px solid #004020;border-radius:999px;font-family:'Inter',sans-serif;font-size:14.5px;font-weight:700;letter-spacing:.04em;text-decoration:none;cursor:pointer;box-shadow:0 10px 24px rgba(188,167,99,.35);transition:all .3s ease;} .ir-team-btn:hover{ transform:translateY(-2px);background:linear-gradient(135deg,#004020 0%,#002D16 100%);color:#FAF8F3;border-color:#BCA763;box-shadow:0 14px 32px rgba(0,64,32,.25);} @media(max-width:991px){ .ir-team-top-header{top:82px;} .ir-team-main-heading{font-size:30px;} .ir-team-watermark{font-size:min(6vw,34px);max-width:88vw;} .ir-team-stage{margin-top:58px;height:80vh;} .ir-team-split{flex-direction:column;gap:16px;} .ir-state-2 .ir-team-split{flex-direction:column-reverse;} .ir-team-col-profile{flex:0 0 auto;} .ir-profile-card{height:180px;max-width:240px;padding:8px;} .ir-profile-visual{height:60px;} .ir-portrait-icon{width:40px;height:40px;} .ir-portrait-monogram{font-size:16px;} .ir-bullet-list{gap:10px;} .ir-bullet-text{font-size:13.5px;} .ir-center-pillars{gap:12px;margin-bottom:16px;} } 
+</style>
+
+<!-- UNIFIED STICKY SCROLLYTELLING STYLES -->
+<style>
+/* Base Section Architecture */
+.ir-sec {
+  position: relative !important;
+  width: 100% !important;
+  height: 192vh !important;
+  background-color: #FAF8F3 !important;
+  border-top: 1px solid rgba(188, 167, 99, 0.25) !important;
+  box-sizing: border-box !important;
+}
+
+.ir-sec-viewport {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100vh !important;
+  overflow: hidden !important;
+  background-color: #FAF8F3 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  box-sizing: border-box !important;
+  padding: 24px !important;
+}
+
+/* Background Watermark */
+.ir-sec-watermark {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  font-family: 'Cinzel', serif !important;
+  font-size: min(5vw, 68px) !important;
+  font-weight: 700 !important;
+  color: rgba(0, 64, 32, 0.022) !important;
+  letter-spacing: 0.04em !important;
+  text-align: center !important;
+  max-width: 88vw !important;
+  pointer-events: none !important;
+  user-select: none !important;
+  white-space: nowrap !important;
+  z-index: 1 !important;
+}
+
+/* Persistent Centered Header */
+.ir-sec-top-header {
+  position: absolute !important;
+  top: 92px !important;
+  left: 0 !important;
+  width: 100% !important;
+  text-align: center !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  z-index: 60 !important;
+  pointer-events: none !important;
+}
+
+.ir-sec-heading {
+  font-family: 'Playfair Display', 'Cinzel', serif !important;
+  font-size: clamp(28px, 3vw, 40px) !important;
+  font-weight: 700 !important;
+  color: #004020 !important;
+  margin: 0 !important;
+  text-align: center !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.01em !important;
+}
+
+.ir-sec-line {
+  width: 50px !important;
+  height: 2px !important;
+  background: #BCA763 !important;
+  margin: 8px auto 0 auto !important;
+  border-radius: 2px !important;
+}
+
+/* Stage Area */
+.ir-sec-stage {
+  position: relative !important;
+  width: 100% !important;
+  max-width: 1180px !important;
+  height: 74vh !important;
+  min-height: 460px !important;
+  max-height: 620px !important;
+  margin-top: 72px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  z-index: 10 !important;
+}
+
+/* State Views */
+.ir-sec-state {
+  position: absolute !important;
+  inset: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  box-sizing: border-box !important;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease, transform 0.35s ease !important;
+}
+
+/* 50/50 Split Layout */
+.ir-sec-split {
+  width: 100% !important;
+  height: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 56px !important;
+}
+
+.ir-sec-split.ir-reverse {
+  flex-direction: row-reverse !important;
+}
+
+.ir-sec-col-card {
+  flex: 0 0 340px !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.ir-sec-col-content {
+  flex: 1 1 0% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+}
+
+/* Luxury Feature Card */
+.ir-card {
+  position: relative !important;
+  width: 100% !important;
+  max-width: 320px !important;
+  height: 410px !important;
+  background: #FFFFFF !important;
+  border-radius: 14px !important;
+  border: 1px solid rgba(188, 167, 99, 0.38) !important;
+  box-shadow: 0 16px 40px rgba(0, 64, 32, 0.07) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  padding: 22px 18px !important;
+  box-sizing: border-box !important;
+}
+
+.ir-card::before {
+  content: '' !important;
+  position: absolute !important;
+  inset: 8px !important;
+  border: 1px solid rgba(188, 167, 99, 0.16) !important;
+  border-radius: 10px !important;
+  pointer-events: none !important;
+}
+
+.ir-card-head {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.ir-card-badge {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 9.5px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.14em !important;
+  color: #BCA763 !important;
+  background: rgba(188, 167, 99, 0.1) !important;
+  padding: 4px 8px !important;
+  border-radius: 4px !important;
+  border: 1px solid rgba(188, 167, 99, 0.25) !important;
+}
+
+.ir-card-crest {
+  width: 26px !important;
+  height: 26px !important;
+  border: 1.5px solid #BCA763 !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-family: 'Cinzel', serif !important;
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  color: #BCA763 !important;
+}
+
+.ir-card-visual {
+  position: relative !important;
+  width: 100% !important;
+  height: 180px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.ir-card-icon {
+  width: 92px !important;
+  height: 92px !important;
+  border-radius: 50% !important;
+  background: linear-gradient(145deg, #FAF8F3, #EDE8DC) !important;
+  border: 2px solid rgba(188, 167, 99, 0.45) !important;
+  box-shadow: 0 10px 24px rgba(0, 64, 32, 0.06) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  position: relative !important;
+}
+
+.ir-card-monogram {
+  font-family: 'Cinzel', serif !important;
+  font-size: 26px !important;
+  font-weight: 700 !important;
+  color: #004020 !important;
+}
+
+.ir-card-ring {
+  position: absolute !important;
+  inset: -5px !important;
+  border: 1px dashed rgba(188, 167, 99, 0.35) !important;
+  border-radius: 50% !important;
+}
+
+.ir-card-footer {
+  text-align: center !important;
+  border-top: 1px solid rgba(188, 167, 99, 0.2) !important;
+  padding-top: 10px !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.ir-card-title {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  color: #004020 !important;
+  margin: 0 0 2px 0 !important;
+}
+
+.ir-card-sub {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  color: #BCA763 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+}
+
+.ir-card-placeholder {
+  border: 2px dashed rgba(188, 167, 99, 0.45) !important;
+  background: rgba(255, 255, 255, 0.75) !important;
+}
+
+/* Content Headings & Lines */
+.ir-sec-title {
+  font-family: 'Playfair Display', serif !important;
+  font-size: clamp(28px, 2.8vw, 38px) !important;
+  font-weight: 700 !important;
+  color: #004020 !important;
+  line-height: 1.15 !important;
+  margin: 0 0 10px 0 !important;
+}
+
+.ir-sec-line-sub {
+  width: 44px !important;
+  height: 2px !important;
+  background: #BCA763 !important;
+  border-radius: 2px !important;
+  margin-bottom: 20px !important;
+}
+
+/* Bullet Points */
+.ir-bullet-list {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 14px !important;
+}
+
+.ir-bullet-item {
+  display: flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+  padding: 3px 0 !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.35s ease, transform 0.35s ease !important;
+  box-sizing: border-box !important;
+}
+
+.ir-bullet-dot {
+  width: 8px !important;
+  height: 8px !important;
+  background: #BCA763 !important;
+  border-radius: 50% !important;
+  flex-shrink: 0 !important;
+  box-shadow: 0 0 8px rgba(188, 167, 99, 0.5) !important;
+}
+
+.ir-bullet-text {
+  font-family: 'Inter', sans-serif !important;
+  font-size: clamp(15px, 1.2vw, 17.5px) !important;
+  font-weight: 600 !important;
+  color: #004020 !important;
+  line-height: 1.45 !important;
+  margin: 0 !important;
+  letter-spacing: -0.01em !important;
+}
+
+/* Center Stage (State 3 Layout) */
+.ir-center-stage {
+  width: 100% !important;
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  padding: 0 20px !important;
+  box-sizing: border-box !important;
+}
+
+.ir-center-eyebrow {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  color: #BCA763 !important;
+  letter-spacing: 0.16em !important;
+  text-transform: uppercase !important;
+  margin-bottom: 12px !important;
+}
+
+.ir-center-dot {
+  width: 6px !important;
+  height: 6px !important;
+  background: #BCA763 !important;
+  border-radius: 50% !important;
+}
+
+.ir-center-heading {
+  font-family: 'Playfair Display', serif !important;
+  font-size: clamp(30px, 3.6vw, 52px) !important;
+  font-weight: 700 !important;
+  color: #004020 !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.15 !important;
+  max-width: 840px !important;
+  margin: 0 auto 14px auto !important;
+}
+
+.ir-center-desc {
+  font-family: 'Inter', sans-serif !important;
+  font-size: clamp(14px, 1.1vw, 16px) !important;
+  color: #2D4C38 !important;
+  line-height: 1.6 !important;
+  max-width: 660px !important;
+  margin: 0 auto 24px auto !important;
+}
+
+.ir-center-pillars {
+  display: flex !important;
+  justify-content: center !important;
+  gap: 28px !important;
+  margin-bottom: 26px !important;
+  padding-bottom: 20px !important;
+  border-bottom: 1px solid rgba(188, 167, 99, 0.25) !important;
+  width: 100% !important;
+  max-width: 700px !important;
+}
+
+.ir-pillar-stat {
+  font-family: 'Cinzel', serif !important;
+  font-size: clamp(18px, 1.6vw, 24px) !important;
+  font-weight: 700 !important;
+  color: #004020 !important;
+}
+
+.ir-pillar-lbl {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 9.5px !important;
+  font-weight: 600 !important;
+  color: #6B7C72 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+}
+
+.ir-pillar-sep {
+  width: 1px !important;
+  height: 28px !important;
+  background: rgba(188, 167, 99, 0.3) !important;
+}
+
+.ir-sec-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  padding: 14px 34px !important;
+  background: linear-gradient(135deg, #D4AF37 0%, #BCA763 100%) !important;
+  color: #002D16 !important;
+  border: 1.5px solid #004020 !important;
+  border-radius: 999px !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 14.5px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.04em !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  box-shadow: 0 10px 24px rgba(188, 167, 99, 0.35) !important;
+  transition: all 0.3s ease !important;
+}
+
+.ir-sec-btn:hover {
+  transform: translateY(-2px) !important;
+  background: linear-gradient(135deg, #004020 0%, #002D16 100%) !important;
+  color: #FAF8F3 !important;
+  border-color: #BCA763 !important;
+  box-shadow: 0 14px 32px rgba(0, 64, 32, 0.25) !important;
+}
+
+/* Responsive Overrides */
+@media (max-width: 991px) {
+  .ir-sec-top-header { top: 82px !important; }
+  .ir-sec-heading { font-size: 24px !important; }
+  .ir-sec-stage { margin-top: 58px !important; height: 80vh !important; }
+  .ir-sec-watermark { font-size: min(6vw, 34px) !important; max-width: 86vw !important; }
+  .ir-sec-split { flex-direction: column !important; gap: 16px !important; }
+  .ir-sec-split.ir-reverse { flex-direction: column !important; }
+  .ir-sec-col-card { flex: 0 0 auto !important; }
+  .ir-card { height: 180px !important; max-width: 240px !important; padding: 8px !important; }
+  .ir-card-visual { height: 60px !important; }
+  .ir-card-icon { width: 40px !important; height: 40px !important; }
+  .ir-card-monogram { font-size: 16px !important; }
+  .ir-bullet-list { gap: 10px !important; }
+  .ir-bullet-text { font-size: 13.5px !important; }
+  .ir-center-pillars { gap: 12px !important; margin-bottom: 16px !important; }
+}
+</style>
+
+</head>
+<body>
+  <div class="ir-master-wrap">
+    <!-- Header -->
+    <header class="ir-header">
+      <div class="ir-nav-container">
+        <a href="/" class="ir-logo-link">
+          <svg class="ir-logo-svg" viewBox="0 0 340 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(4, 5)">
+              <rect x="2" y="2" width="56" height="56" rx="8" fill="#002D16" stroke="#BCA763" stroke-width="1.8"/>
+              <path d="M14 44 L24 16 L36 16 L46 44" stroke="#BCA763" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M20 34 L40 34" stroke="#D4AF37" stroke-width="2.2" stroke-linecap="round"/>
+              <path d="M30 16 L30 44" stroke="#FAF8F3" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="30" cy="11" r="3.2" fill="#D4AF37"/>
+              <path d="M8 8 L14 8 M8 8 L8 14" stroke="#BCA763" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M52 8 L46 8 M52 8 L52 14" stroke="#BCA763" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M8 52 L14 52 M8 52 L8 46" stroke="#BCA763" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M52 52 L46 52 M52 52 L52 46" stroke="#BCA763" stroke-width="1.6" stroke-linecap="round"/>
+            </g>
+            <g transform="translate(74, 9)">
+              <text x="0" y="32" font-family="'Cinzel', 'Playfair Display', Georgia, serif" font-size="28" font-weight="700" letter-spacing="0.04em" fill="#004020">Invest<tspan fill="#BCA763">R</tspan>right</text>
+              <text x="1.5" y="47" font-family="'Inter', -apple-system, sans-serif" font-size="8.5" font-weight="700" letter-spacing="0.32em" fill="#004020" opacity="0.85">CAPITAL &bull; AIF CAT III</text>
+            </g>
+          </svg>
+        </a>
+
+        <nav class="ir-nav-menu">
+          <a href="#" class="ir-nav-link ir-nav-active">Overview</a>
+          <div class="ir-dropdown">
+            <a href="#" class="ir-nav-link">Our Strategies <span class="ir-arrow-icon">&#9662;</span></a>
+            <div class="ir-dropdown-menu">
+              <a href="#" class="ir-dropdown-item">
+                <span class="ir-item-title">Infinity Growth Fund - I</span>
+                <span class="ir-item-sub">Long-short equity derivatives execution</span>
+              </a>
+              <a href="#" class="ir-dropdown-item">
+                <span class="ir-item-title">Quantitative Alpha</span>
+                <span class="ir-item-sub">Statistical arbitrage & factor models</span>
+              </a>
+            </div>
+          </div>
+          <a href="#" class="ir-nav-link">Performance</a>
+          <a href="#" class="ir-nav-link">Risk Governance</a>
+          <a href="#" class="ir-nav-link">About Us</a>
+        </nav>
+
+        <div class="ir-nav-right">
+          <a href="#investor-login" class="ir-login-btn">
+            <span class="ir-lock-icon">&#128274;</span> Investor Login
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Ticker -->
+    <div class="ir-ticker-bar">
+      <div class="ir-ticker-label">
+        <span class="ir-live-pulse"></span> LIVE MARKETS
+      </div>
+      <div class="ir-ticker-track-wrapper">
+        <div class="ir-ticker-track">
+          <div class="ir-ticker-item"><span class="ir-ticker-sym">NIFTY 50</span> <span class="ir-ticker-val">24,835.40</span> <span class="ir-ticker-up">&#9650; +0.48%</span></div>
+          <span class="ir-ticker-sep">&diams;</span>
+          <div class="ir-ticker-item"><span class="ir-ticker-sym">BANK NIFTY</span> <span class="ir-ticker-val">52,410.85</span> <span class="ir-ticker-up">&#9650; +0.62%</span></div>
+          <span class="ir-ticker-sep">&diams;</span>
+          <div class="ir-ticker-item"><span class="ir-ticker-sym">INDIA VIX</span> <span class="ir-ticker-val">12.84</span> <span class="ir-ticker-down">&#9660; -3.12%</span></div>
+          <span class="ir-ticker-sep">&diams;</span>
+          <div class="ir-ticker-item"><span class="ir-ticker-sym">GOLD (10g)</span> <span class="ir-ticker-val">&#8377;74,850</span> <span class="ir-ticker-up">&#9650; +0.22%</span></div>
+          <span class="ir-ticker-sep">&diams;</span>
+          <div class="ir-ticker-item"><span class="ir-ticker-sym">USD/INR</span> <span class="ir-ticker-val">83.94</span> <span class="ir-ticker-down">&#9660; -0.04%</span></div>
+          <span class="ir-ticker-sep">&diams;</span>
+          <div class="ir-ticker-item"><span class="ir-ticker-sym">10Y G-SEC</span> <span class="ir-ticker-val">6.88%</span> <span class="ir-ticker-down">&#9660; -0.01%</span></div>
+          <span class="ir-ticker-sep">&diams;</span>
+          <div class="ir-ticker-item"><span class="ir-ticker-sym">NIFTY 50</span> <span class="ir-ticker-val">24,835.40</span> <span class="ir-ticker-up">&#9650; +0.48%</span></div>
+          <span class="ir-ticker-sep">&diams;</span>
+          <div class="ir-ticker-item"><span class="ir-ticker-sym">BANK NIFTY</span> <span class="ir-ticker-val">52,410.85</span> <span class="ir-ticker-up">&#9650; +0.62%</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Fold -->
+    <section class="ir-derivatives-hero">
+      <div class="ir-dd-vignette-layer"></div>
+      <div class="ir-wealth-content">
+        <h1 class="ir-wealth-heading">Navigating Every Market Cycle with Institutional Precision</h1>
+        <p class="ir-wealth-subheading">A SEBI-registered AIF delivering sophisticated risk management and capital preservation for high-net-worth portfolios.</p>
+        <a href="#what-we-offer" id="irScrollBtn" class="ir-scroll-btn">
+          <span>Explore</span>
+          <span class="ir-scroll-arrow">&#9662;</span>
+        </a>
+      </div>
+    </section>
+
+<style>html,body{overflow-x:clip!important;}.ir-master-wrap,.ir-hero-and-next-wrap,div:has(>.ir-sec),.w-embed:has(>.ir-sec),.ir-next-section{overflow-x:clip!important;overflow-y:visible!important;width:100%!important;padding:0!important;margin:0!important;background:transparent!important;border:none!important;}.ir-sec{position:relative!important;width:100%!important;height:160vh!important;background-color:#FAF8F3!important;border-top:1px solid rgba(188,167,99,0.25)!important;box-sizing:border-box!important;}#what-we-offer{height:168vh!important;}#our-team{height:132vh!important;}#investment-methodology{height:168vh!important;}.ir-sec-viewport{position:-webkit-sticky!important;position:sticky!important;top:76px!important;left:0!important;width:100%!important;height:calc(100vh - 76px)!important;overflow:hidden!important;background-color:#FAF8F3!important;display:flex!important;flex-direction:column!important;justify-content:flex-start!important;align-items:center!important;box-sizing:border-box!important;padding:16px 24px 20px 24px!important;}.ir-sec-watermark{position:absolute!important;top:50%!important;left:50%!important;transform:translate(-50%,-50%)!important;font-family:'Cinzel',serif!important;font-size:min(5vw,68px)!important;font-weight:700!important;color:rgba(0,64,32,0.022)!important;letter-spacing:0.04em!important;text-align:center!important;max-width:88vw!important;pointer-events:none!important;user-select:none!important;white-space:nowrap!important;z-index:1!important;}.ir-sec-top-header{position:relative!important;top:0!important;left:0!important;width:100%!important;text-align:center!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;margin-top:2px!important;margin-bottom:14px!important;flex-shrink:0!important;z-index:60!important;pointer-events:none!important;}.ir-sec-heading{font-family:'Playfair Display','Cinzel',serif!important;font-size:clamp(26px,2.8vw,38px)!important;font-weight:700!important;color:#004020!important;margin:0!important;text-align:center!important;line-height:1.2!important;letter-spacing:-0.01em!important;}.ir-sec-line{width:50px!important;height:2px!important;background:#BCA763!important;margin:8px auto 0 auto!important;border-radius:2px!important;}.ir-sec-stage{position:relative!important;width:100%!important;max-width:1180px!important;height:auto!important;flex:1 1 0%!important;min-height:460px!important;max-height:620px!important;margin-top:0!important;display:flex!important;align-items:center!important;justify-content:center!important;z-index:10!important;}.ir-sec-state{position:absolute!important;inset:0!important;display:flex!important;align-items:center!important;box-sizing:border-box!important;opacity:0;pointer-events:none;transition:opacity 0.35s ease,transform 0.35s ease!important;}.ir-sec-split{width:100%!important;height:100%!important;display:flex!important;align-items:center!important;justify-content:space-between!important;gap:56px!important;}.ir-sec-split.ir-reverse{flex-direction:row-reverse!important;}.ir-sec-col-card{flex:0 0 340px!important;display:flex!important;justify-content:center!important;}.ir-sec-col-content{flex:1 1 0%!important;display:flex!important;flex-direction:column!important;justify-content:center!important;}.ir-card{position:relative!important;width:100%!important;max-width:320px!important;height:410px!important;background:#FFFFFF!important;border-radius:14px!important;border:1px solid rgba(188,167,99,0.38)!important;box-shadow:0 16px 40px rgba(0,64,32,0.07)!important;display:flex!important;flex-direction:column!important;justify-content:space-between!important;padding:22px 18px!important;box-sizing:border-box!important;}.ir-card::before{content:''!important;position:absolute!important;inset:8px!important;border:1px solid rgba(188,167,99,0.16)!important;border-radius:10px!important;pointer-events:none!important;}.ir-card-head{display:flex!important;justify-content:space-between!important;align-items:center!important;position:relative!important;z-index:2!important;}.ir-card-badge{font-family:'Inter',sans-serif!important;font-size:9.5px!important;font-weight:700!important;letter-spacing:0.14em!important;color:#BCA763!important;background:rgba(188,167,99,0.1)!important;padding:4px 8px!important;border-radius:4px!important;border:1px solid rgba(188,167,99,0.25)!important;}.ir-card-crest{width:26px!important;height:26px!important;border:1.5px solid #BCA763!important;border-radius:50%!important;display:flex!important;align-items:center!important;justify-content:center!important;font-family:'Cinzel',serif!important;font-size:10px!important;font-weight:700!important;color:#BCA763!important;}.ir-card-visual{position:relative!important;width:100%!important;height:180px!important;display:flex!important;align-items:center!important;justify-content:center!important;}</style>
+<style>.ir-card-icon{width:92px!important;height:92px!important;border-radius:50%!important;background:linear-gradient(145deg,#FAF8F3,#EDE8DC)!important;border:2px solid rgba(188,167,99,0.45)!important;box-shadow:0 10px 24px rgba(0,64,32,0.06)!important;display:flex!important;align-items:center!important;justify-content:center!important;position:relative!important;}.ir-card-monogram{font-family:'Cinzel',serif!important;font-size:26px!important;font-weight:700!important;color:#004020!important;}.ir-card-ring{position:absolute!important;inset:-5px!important;border:1px dashed rgba(188,167,99,0.35)!important;border-radius:50%!important;}.ir-card-footer{text-align:center!important;border-top:1px solid rgba(188,167,99,0.2)!important;padding-top:10px!important;position:relative!important;z-index:2!important;}.ir-card-title{font-family:'Playfair Display',serif!important;font-size:18px!important;font-weight:700!important;color:#004020!important;margin:0 0 2px 0!important;}.ir-card-sub{font-family:'Inter',sans-serif!important;font-size:11px!important;font-weight:600!important;color:#BCA763!important;letter-spacing:0.08em!important;text-transform:uppercase!important;}.ir-sec-title{font-family:'Playfair Display',serif!important;font-size:clamp(28px,2.8vw,38px)!important;font-weight:700!important;color:#004020!important;line-height:1.15!important;margin:0 0 10px 0!important;}.ir-sec-line-sub{width:44px!important;height:2px!important;background:#BCA763!important;border-radius:2px!important;margin-bottom:20px!important;}.ir-bullet-list{list-style:none!important;padding:0!important;margin:0!important;display:flex!important;flex-direction:column!important;gap:14px!important;}.ir-bullet-item{display:flex!important;align-items:center!important;gap:14px!important;padding:3px 0!important;background:transparent!important;border:none!important;box-shadow:none!important;opacity:0;transform:translateY(16px);transition:opacity 0.35s ease,transform 0.35s ease!important;box-sizing:border-box!important;}.ir-bullet-dot{width:8px!important;height:8px!important;background:#BCA763!important;border-radius:50%!important;flex-shrink:0!important;box-shadow:0 0 8px rgba(188,167,99,0.5)!important;}.ir-bullet-text{font-family:'Inter',sans-serif!important;font-size:clamp(15px,1.2vw,17.5px)!important;font-weight:600!important;color:#004020!important;line-height:1.45!important;margin:0!important;letter-spacing:-0.01em!important;}.ir-split-wwo1{align-items:center!important;}.ir-wwo1-left{flex:0 0 45%!important;display:flex!important;flex-direction:column!important;justify-content:center!important;padding-right:20px!important;}.ir-wwo1-title{font-family:'Cinzel','Playfair Display',serif!important;font-size:clamp(28px,2.6vw,42px)!important;font-weight:700!important;color:#004020!important;line-height:1.2!important;margin:10px 0 12px 0!important;}.ir-wwo1-desc{font-family:'Inter',sans-serif!important;font-size:clamp(15px,1.15vw,17px)!important;color:#2D4C38!important;line-height:1.6!important;margin:0 0 20px 0!important;}.ir-wwo1-meta{display:flex!important;align-items:center!important;gap:20px!important;padding-top:16px!important;border-top:1px solid rgba(188,167,99,0.25)!important;}.ir-meta-item{display:flex!important;flex-direction:column!important;}.ir-meta-stat-num{font-family:'Cinzel',serif!important;font-size:17px!important;font-weight:700!important;color:#004020!important;}.ir-meta-stat-lbl{font-family:'Inter',sans-serif!important;font-size:10px!important;font-weight:600!important;color:#6B7C72!important;letter-spacing:0.06em!important;text-transform:uppercase!important;margin-top:2px!important;}.ir-meta-sep{width:1px!important;height:24px!important;background:rgba(188,167,99,0.3)!important;}.ir-wwo1-right{flex:1 1 0%!important;display:flex!important;flex-direction:column!important;gap:14px!important;}.ir-mini-card{background:#FFFFFF!important;border:1px solid rgba(188,167,99,0.32)!important;border-radius:10px!important;padding:16px 20px!important;box-shadow:0 8px 24px rgba(0,64,32,0.04)!important;border-left:4px solid #BCA763!important;opacity:0;transform:translateY(16px);transition:opacity 0.35s ease,transform 0.35s ease!important;}.ir-mini-card-head{display:flex!important;justify-content:space-between!important;align-items:center!important;margin-bottom:6px!important;}.ir-mini-badge{font-family:'Inter',sans-serif!important;font-size:10px!important;font-weight:700!important;color:#BCA763!important;letter-spacing:0.12em!important;text-transform:uppercase!important;}.ir-mini-num{font-family:'Cinzel',serif!important;font-size:14px!important;font-weight:700!important;color:rgba(188,167,99,0.5)!important;}.ir-mini-text{font-family:'Inter',sans-serif!important;font-size:14px!important;color:#004020!important;line-height:1.5!important;margin:0!important;}.ir-gold-text{color:#002D16!important;font-weight:700!important;border-bottom:1.5px solid rgba(188,167,99,0.4)!important;}</style>
+<style>.ir-center-stage{width:100%!important;height:100%!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;text-align:center!important;padding:0 20px!important;box-sizing:border-box!important;}.ir-center-eyebrow{display:inline-flex!important;align-items:center!important;gap:8px!important;font-family:'Inter',sans-serif!important;font-size:11px!important;font-weight:700!important;color:#BCA763!important;letter-spacing:0.16em!important;text-transform:uppercase!important;margin-bottom:12px!important;}.ir-center-dot{width:6px!important;height:6px!important;background:#BCA763!important;border-radius:50%!important;}.ir-center-heading{font-family:'Playfair Display',serif!important;font-size:clamp(30px,3.6vw,52px)!important;font-weight:700!important;color:#004020!important;letter-spacing:-0.02em!important;line-height:1.15!important;max-width:840px!important;margin:0 auto 14px auto!important;}.ir-center-desc{font-family:'Inter',sans-serif!important;font-size:clamp(14px,1.1vw,16px)!important;color:#2D4C38!important;line-height:1.6!important;max-width:660px!important;margin:0 auto 24px auto!important;}.ir-center-pillars{display:flex!important;justify-content:center!important;gap:28px!important;margin-bottom:26px!important;padding-bottom:20px!important;border-bottom:1px solid rgba(188,167,99,0.25)!important;width:100%!important;max-width:700px!important;}.ir-pillar-stat{font-family:'Cinzel',serif!important;font-size:clamp(18px,1.6vw,24px)!important;font-weight:700!important;color:#004020!important;}.ir-pillar-lbl{font-family:'Inter',sans-serif!important;font-size:9.5px!important;font-weight:600!important;color:#6B7C72!important;letter-spacing:0.08em!important;text-transform:uppercase!important;}.ir-pillar-sep{width:1px!important;height:28px!important;background:rgba(188,167,99,0.3)!important;}.ir-sec-btn{display:inline-flex!important;align-items:center!important;gap:10px!important;padding:14px 34px!important;background:linear-gradient(135deg,#D4AF37 0%,#BCA763 100%)!important;color:#002D16!important;border:1.5px solid #004020!important;border-radius:999px!important;font-family:'Inter',sans-serif!important;font-size:14.5px!important;font-weight:700!important;letter-spacing:0.04em!important;text-decoration:none!important;cursor:pointer!important;box-shadow:0 10px 24px rgba(188,167,99,0.35)!important;transition:all 0.3s ease!important;}.ir-sec-btn:hover{transform:translateY(-2px)!important;background:linear-gradient(135deg,#004020 0%,#002D16 100%)!important;color:#FAF8F3!important;border-color:#BCA763!important;box-shadow:0 14px 32px rgba(0,64,32,0.25)!important;}.ir-contact-sec{position:relative!important;width:100%!important;background-color:#FAF8F3!important;border-top:1px solid rgba(188,167,99,0.25)!important;padding:96px 24px!important;text-align:center!important;box-sizing:border-box!important;}.ir-contact-container{max-width:880px!important;margin:0 auto!important;}.ir-contact-subheading{font-family:'Inter',sans-serif!important;font-size:clamp(16px,1.25vw,19px)!important;font-weight:400!important;color:#2D4C38!important;line-height:1.6!important;max-width:640px!important;margin:20px auto 36px auto!important;}.ir-contact-btn-wrap{display:flex!important;justify-content:center!important;}.ir-modal-overlay{position:fixed!important;inset:0!important;background:rgba(0,45,22,0.72)!important;backdrop-filter:blur(8px)!important;-webkit-backdrop-filter:blur(8px)!important;z-index:2000!important;display:flex!important;align-items:center!important;justify-content:center!important;opacity:0!important;pointer-events:none!important;transition:opacity 0.3s ease!important;padding:20px!important;box-sizing:border-box!important;}.ir-modal-overlay.is-open{opacity:1!important;pointer-events:auto!important;}.ir-modal-card{position:relative!important;width:100%!important;max-width:480px!important;background:#FAF8F3!important;border:1.5px solid #BCA763!important;border-radius:14px!important;padding:32px 28px!important;box-shadow:0 24px 60px rgba(0,40,20,0.3)!important;box-sizing:border-box!important;transform:scale(0.96);transition:transform 0.3s ease!important;}.ir-modal-overlay.is-open .ir-modal-card{transform:scale(1)!important;}.ir-modal-close{position:absolute!important;top:16px!important;right:18px!important;background:none!important;border:none!important;font-size:26px!important;line-height:1!important;color:#004020!important;cursor:pointer!important;padding:4px!important;}.ir-modal-head{text-align:center!important;margin-bottom:20px!important;}.ir-modal-title{font-family:'Playfair Display',serif!important;font-size:24px!important;font-weight:700!important;color:#004020!important;margin:8px 0 6px 0!important;}</style>
+<style>.ir-modal-subtitle{font-family:'Inter',sans-serif!important;font-size:13px!important;color:#6B7C72!important;line-height:1.45!important;margin:0!important;}.ir-modal-form{display:flex!important;flex-direction:column!important;gap:14px!important;}.ir-form-group{display:flex!important;flex-direction:column!important;gap:6px!important;text-align:left!important;}.ir-form-label{font-family:'Inter',sans-serif!important;font-size:11.5px!important;font-weight:700!important;color:#004020!important;letter-spacing:0.04em!important;}.ir-form-input{width:100%!important;padding:10px 14px!important;border:1px solid rgba(188,167,99,0.35)!important;border-radius:6px!important;background:#FFFFFF!important;font-family:'Inter',sans-serif!important;font-size:13.5px!important;color:#004020!important;outline:none!important;box-sizing:border-box!important;}.ir-form-input:focus{border-color:#BCA763!important;box-shadow:0 0 0 2px rgba(188,167,99,0.2)!important;}.ir-form-textarea{resize:vertical!important;min-height:70px!important;}.ir-btn-submit{width:100%!important;justify-content:center!important;margin-top:6px!important;}.ir-form-success{text-align:center!important;padding:16px 0!important;}.ir-success-title{font-family:'Playfair Display',serif!important;font-size:22px!important;font-weight:700!important;color:#004020!important;margin:12px 0 8px 0!important;}.ir-success-desc{font-family:'Inter',sans-serif!important;font-size:13.5px!important;color:#2D4C38!important;line-height:1.55!important;margin:0 0 20px 0!important;}.ir-footer{position:relative!important;width:100%!important;background-color:#002D16!important;border-top:2px solid #BCA763!important;color:#FAF8F3!important;padding:64px 36px 40px 36px!important;box-sizing:border-box!important;}.ir-footer-inner{max-width:1240px!important;margin:0 auto!important;display:flex!important;justify-content:space-between!important;gap:48px!important;box-sizing:border-box!important;}.ir-footer-brand{flex:0 0 38%!important;display:flex!important;flex-direction:column!important;gap:12px!important;}.ir-brand-lockup{display:inline-flex!important;align-items:center!important;gap:12px!important;}.ir-brand-name{font-family:'Cinzel','Playfair Display',serif!important;font-size:24px!important;font-weight:700!important;color:#FAF8F3!important;letter-spacing:0.02em!important;}.ir-footer-tagline{font-family:'Inter',sans-serif!important;font-size:12px!important;font-weight:500!important;color:#BCA763!important;line-height:1.5!important;margin:0!important;}.ir-footer-copy{font-family:'Inter',sans-serif!important;font-size:11.5px!important;color:rgba(250,248,243,0.6)!important;line-height:1.5!important;margin:0!important;}.ir-footer-addr{font-family:'Inter',sans-serif!important;font-size:11px!important;color:rgba(250,248,243,0.45)!important;margin-top:4px!important;}.ir-footer-links{flex:0 0 22%!important;}.ir-footer-col-title{font-family:'Inter',sans-serif!important;font-size:12px!important;font-weight:700!important;color:#BCA763!important;letter-spacing:0.14em!important;text-transform:uppercase!important;margin:0 0 8px 0!important;}.ir-footer-col-line{width:28px!important;height:1.5px!important;background:#BCA763!important;border-radius:1px!important;margin-bottom:14px!important;}.ir-footer-list{list-style:none!important;padding:0!important;margin:0!important;display:flex!important;flex-direction:column!important;gap:10px!important;}.ir-footer-link{font-family:'Inter',sans-serif!important;font-size:13.5px!important;font-weight:500!important;color:rgba(250,248,243,0.78)!important;text-decoration:none!important;transition:color 0.2s ease!important;}.ir-footer-link:hover{color:#BCA763!important;text-decoration:underline!important;}@media (max-width:991px){.ir-sec-top-header{top:82px!important;}.ir-sec-heading{font-size:24px!important;}.ir-sec-stage{margin-top:58px!important;height:80vh!important;}.ir-sec-watermark{font-size:min(6vw,34px)!important;max-width:86vw!important;}.ir-sec-split{flex-direction:column!important;gap:16px!important;}.ir-sec-split.ir-reverse{flex-direction:column!important;}.ir-split-wwo1{flex-direction:column!important;gap:18px!important;}.ir-wwo1-left{flex:0 0 auto!important;padding-right:0!important;text-align:center!important;}.ir-wwo1-meta{justify-content:center!important;}.ir-sec-col-card{flex:0 0 auto!important;}.ir-card{height:180px!important;max-width:240px!important;padding:8px!important;}.ir-card-visual{height:60px!important;}.ir-card-icon{width:40px!important;height:40px!important;}.ir-card-monogram{font-size:16px!important;}.ir-bullet-list{gap:10px!important;}.ir-bullet-text{font-size:13.5px!important;}.ir-center-pillars{gap:12px!important;margin-bottom:16px!important;}.ir-footer-inner{flex-direction:column!important;gap:32px!important;}.ir-footer-brand{flex:0 0 100%!important;}.ir-footer-links{flex:0 0 100%!important;}}</style>
+<section class='ir-sec' id='what-we-offer'><div class='ir-sec-viewport'><div class='ir-sec-watermark'>INVESTRRIGHT</div><div class='ir-sec-top-header'><h2 class='ir-sec-heading'>What We Offer</h2><div class='ir-sec-line'></div></div><div class='ir-sec-stage'><div class='ir-sec-state' id='wwo_s1'><div class='ir-sec-split ir-split-wwo1'><div class='ir-wwo1-left'><div class='ir-card-badge'>CAT III AIF &bull; SEBI REGISTERED</div><h3 class='ir-wwo1-title'>Infinity Growth Fund - I</h3><div class='ir-sec-line-sub'></div><p class='ir-wwo1-desc'>A multi-strategy AIF Engineered for evolving market cycles.</p><div class='ir-wwo1-meta'><div class='ir-meta-item'><span class='ir-meta-stat-num'>CAT III</span><span class='ir-meta-stat-lbl'>SEBI Registered</span></div><div class='ir-meta-sep'></div><div class='ir-meta-item'><span class='ir-meta-stat-num'>Long-Short</span><span class='ir-meta-stat-lbl'>Equity Execution</span></div></div></div><div class='ir-wwo1-right'><div class='ir-mini-card' id='wwo_c1'><div class='ir-mini-card-head'><span class='ir-mini-badge'>INVESTOR FIRST STRUCTURE</span><span class='ir-mini-num'>01</span></div><p class='ir-mini-text'>Three return bands. Three different fee structures. One principle: <strong class='ir-gold-text'>Investor First</strong>.</p></div><div class='ir-mini-card' id='wwo_c2'><div class='ir-mini-card-head'><span class='ir-mini-badge'>CORE ENGINE</span><span class='ir-mini-num'>02</span></div><p class='ir-mini-text'><strong class='ir-gold-text'>Human Insight</strong>, quantitative Systems, &amp; Artificial Intelligence combined into one disciplined engine.</p></div><div class='ir-mini-card' id='wwo_c3'><div class='ir-mini-card-head'><span class='ir-mini-badge'>RISK &amp; PRESERVATION</span><span class='ir-mini-num'>03</span></div><p class='ir-mini-text'>Position Sizing, liquidity discipline &amp; hedging are designed to keep capital <strong class='ir-gold-text'>adaptive &amp; risk aware</strong>.</p></div></div></div></div><div class='ir-sec-state' id='wwo_s2'><div class='ir-sec-split'><div class='ir-sec-col-card'><div class='ir-card'><div class='ir-card-head'><span class='ir-card-badge'>CAT III AIF</span><div class='ir-card-crest'>IR</div></div><div class='ir-card-visual'><div class='ir-card-icon'><span class='ir-card-ring'></span><span class='ir-card-monogram'>01</span></div></div><div class='ir-card-footer'><h4 class='ir-card-title'>Infinity Growth Fund - I</h4><div class='ir-card-sub'>SEBI Registered Architecture</div></div></div></div><div class='ir-sec-col-content'><h3 class='ir-sec-title'>Investor First Structure</h3><div class='ir-sec-line-sub'></div><ul class='ir-bullet-list'><li class='ir-bullet-item' id='wwo_b2_1'><span class='ir-bullet-dot'></span><span class='ir-bullet-text'>Three distinct return bands calibrated to institutional capital objectives</span></li><li class='ir-bullet-item' id='wwo_b2_2'><span class='ir-bullet-dot'></span><span class='ir-bullet-text'>Three transparent fee structures prioritizing net alpha and hurdle rates</span></li><li class='ir-bullet-item' id='wwo_b2_3'><span class='ir-bullet-dot'></span><span class='ir-bullet-text'>One foundational operating principle: uncompromised investor alignment</span></li><li class='ir-bullet-item' id='wwo_b2_4'><span class='ir-bullet-dot'></span><span class='ir-bullet-text'>Engineered for disciplined wealth preservation and continuous compounding</span></li></ul></div></div></div><div class='ir-sec-state' id='wwo_s3'><div class='ir-sec-split ir-reverse'><div class='ir-sec-col-card'><div class='ir-card'><div class='ir-card-head'><span class='ir-card-badge'>QUANT &amp; AI</span><div class='ir-card-crest'>IR</div></div><div class='ir-card-visual'><div class='ir-card-icon'><span class='ir-card-ring'></span><span class='ir-card-monogram'>02</span></div></div><div class='ir-card-footer'><h4 class='ir-card-title'>Synthesis Engine</h4><div class='ir-card-sub'>Systematic Alpha Architecture</div></div></div></div><div class='ir-sec-col-content'><h3 class='ir-sec-title'>Core Synthesis Engine</h3><div class='ir-sec-line-sub'></div><ul class='ir-bullet-list'><li class='ir-bullet-item' id='wwo_b3_1'><span class='ir-bullet-dot'></span><span class='ir-bullet-text'>Human Market Insight developed across multiple Indian market cycles</span></li><li class='ir-bullet-item' id='wwo_b3_2'><span class='ir-bullet-dot'></span><span class='ir-bullet-text'>Quantitative Systems scanning real-time derivative arbitrage opportunities</span></li><li class='ir-bullet-item' id='wwo_b3_3'><span class='ir-bullet-dot'></span><span class='ir-bullet-text'>Artificial Intelligence models identifying structural market regime transitions</span></li><li class='ir-bullet-item' id='wwo_b3_4'><span class='ir-bullet-dot'></span><span class='ir-bullet-text'>Unified into a single, automated, emotionally uncompromised trading engine</span></li></ul></div></div></div><div class='ir-sec-state' id='wwo_s4'><div class='ir-sec-split'><div class='ir-sec-col-card'><div class='ir-card'><div class='ir-card-head'><span class='ir-card-badge'>DEFENSE FIRST</span><div class='ir-card-crest'>IR</div></div><div class='ir-card-visual'><div class='ir-card-icon'><span class='ir-card-ring'></span><span class='ir-card-monogram'>03</span></div></div><div class='ir-card-footer'><h4 class='ir-card-title'>Risk &amp; Preservation</h4><div class='ir-card-sub'>Drawdown Mitigation Protocol</div></div></div></div><div class='ir-sec-col-content'><h3 class='ir-sec-title'>Risk Discipline &amp; Capital Hedging</h3><div class='ir-sec-line-sub'></div><ul class='ir-bullet-list'><li class='ir-bullet-item' id='wwo_b4_1'><span class='ir-bullet-dot'></span><span class='ir-bullet-text'>Dynamic Position Sizing adjusted to live volatility regimes</span></li><li class='ir-bullet-item' id='wwo_b4_2'><span class='ir-bullet-dot'></span><span class='ir-bullet-text'>Rigorous Liquidity Discipline maintaining agility during market stress</span></li><li class='ir-bullet-item' id='wwo_b4_3'><span class='ir-bullet-dot'></span><span class='ir-bullet-text'>Systematic Derivative Hedging defending portfolios against black swan events</span></li></ul><div style='margin-top:24px;'><a href='#our-team' class='ir-sec-btn'>explore our team &gt;&gt;</a></div></div></div></div></div></div></section>
+<section class='ir-sec' id='our-team'><div class='ir-sec-viewport'><div class='ir-sec-watermark'>INVESTRRIGHT</div><div class='ir-sec-top-header'><h2 class='ir-sec-heading'>Our Team</h2><div class='ir-sec-line'></div></div><div class='ir-sec-stage'><div class='ir-sec-state' id='team_s1'><div class='ir-sec-split'><div class='ir-sec-col-card'><div class='ir-card'><div class='ir-card-head'><span class='ir-card-badge'>LEADERSHIP</span><div class='ir-card-crest'>IR</div></div><div class='ir-card-visual'><div class='ir-card-icon'><span class='ir-card-ring'></span><span class='ir-card-monogram'>AK</span></div></div><div class='ir-card-footer'><h4 class='ir-card-title'>Anuj Khare</h4><div class='ir-card-sub'>Founder &amp; Chief Executive Officer</div></div></div></div><div class='ir-sec-col-content'><h3 class='ir-sec-title'>Anuj Khare | CEO</h3><div class='ir-sec-line-sub'></div><ul class='ir-bullet-list'><li class='ir-bullet-item' id='team_b1_1'><span class='ir-bullet-dot'></span><span class='ir-bullet-text'>BBA</span></li><li class='ir-bullet-item' id='team_b1_2'><span class='ir-bullet-dot'></span><span class='ir-bullet-text'>NISM VIII</span></li><li class='ir-bullet-item' id='team_b1_3'><span class='ir-bullet-dot'></span><span class='ir-bullet-text'>NISM XIX-C</span></li><li class='ir-bullet-item' id='team_b1_4'><span class='ir-bullet-dot'></span><span class='ir-bullet-text'>Pursuing CFA</span></li><li class='ir-bullet-item' id='team_b1_5'><span class='ir-bullet-dot'></span><span class='ir-bullet-text'>7 years and counting in market</span></li><li class='ir-bullet-item' id='team_b1_6'><span class='ir-bullet-dot'></span><span class='ir-bullet-text'>Has managed books of ~100 CR</span></li></ul></div></div></div><div class='ir-sec-state' id='team_s2'><div class='ir-sec-split ir-reverse'><div class='ir-sec-col-card'><div class='ir-card'><div class='ir-card-head'><span class='ir-card-badge'>QUANTITATIVE</span><div class='ir-card-crest'>IR</div></div><div class='ir-card-visual'><div class='ir-card-icon'><span class='ir-card-ring'></span><span class='ir-card-monogram'>JK</span></div></div><div class='ir-card-footer'><h4 class='ir-card-title'>Jatin Khare</h4><div class='ir-card-sub'>Chief Investment Officer</div></div></div></div><div class='ir-sec-col-content'><h3 class='ir-sec-title'>Jatin Khare | CIO</h3><div class='ir-sec-line-sub'></div><ul class='ir-bullet-list'><li class='ir-bullet-item' id='team_b2_1'><span class='ir-bullet-dot'></span><span class='ir-bullet-text'>BBA</span></li><li class='ir-bullet-item' id='team_b2_2'><span class='ir-bullet-dot'></span><span class='ir-bullet-text'>NISM VIII</span></li><li class='ir-bullet-item' id='team_b2_3'><span class='ir-bullet-dot'></span><span class='ir-bullet-text'>Pursuing CFA</span></li><li class='ir-bullet-item' id='team_b2_4'><span class='ir-bullet-dot'></span><span class='ir-bullet-text'>5 Years in Fund and risk systems</span></li></ul></div></div></div><div class='ir-sec-state' id='team_s3'><div class='ir-center-stage'><div class='ir-center-eyebrow'><span class='ir-center-dot'></span><span>PROVEN INSTITUTIONAL STEWARDSHIP</span><span class='ir-center-dot'></span></div><h2 class='ir-center-heading'>75+ years of aggregated experience</h2><p class='ir-center-desc'>Uniting seasoned capital allocators, veteran derivatives traders, and quantitative architects dedicated to disciplined wealth preservation and compounding across market cycles.</p><div class='ir-center-pillars'><div><div class='ir-pillar-stat'>&inr;2,500+ Cr</div><div class='ir-pillar-lbl'>Cumulative Volume &amp; Advisory</div></div><div class='ir-pillar-sep'></div><div><div class='ir-pillar-stat'>SEBI Cat III</div><div class='ir-pillar-lbl'>Registered AIF Architecture</div></div><div class='ir-pillar-sep'></div><div><div class='ir-pillar-stat'>4 Cycles</div><div class='ir-pillar-lbl'>Market Dislocation Resilience</div></div></div><a href='#investment-methodology' class='ir-sec-btn'>view methodology &gt;&gt;</a></div></div></div></div></section>
+<section class='ir-sec' id='investment-methodology'><div class='ir-sec-viewport'><div class='ir-sec-watermark'>INVESTRRIGHT</div><div class='ir-sec-top-header'><h2 class='ir-sec-heading'>Investment Methodology</h2><div class='ir-sec-line'></div></div><div class='ir-sec-stage'><div class='ir-sec-state' id='meth_s1'><div class='ir-sec-split'><div class='ir-sec-col-card'><div class='ir-card'><div class='ir-card-head'><span class='ir-card-badge'>MANDATE ACCESS</span><div class='ir-card-crest'>IR</div></div><div class='ir-card-visual'><div class='ir-card-icon'><span class='ir-card-ring'></span><span class='ir-card-monogram'>01</span></div></div><div class='ir-card-footer'><h4 class='ir-card-title'>Accredited Access</h4><div class='ir-card-sub'>Qualified Institutional Investors</div></div></div></div><div class='ir-sec-col-content'><h3 class='ir-sec-title'>Eligibility &amp; Client Onboarding</h3><div class='ir-sec-line-sub'></div><ul class='ir-bullet-list'><li class='ir-bullet-item' id='meth_b1_1'><span class='ir-bullet-dot'></span><span class='ir-bullet-text'>Open to Accredited Family Offices, Ultra HNIs &amp; Institutional Funds</span></li><li class='ir-bullet-item' id='meth_b1_2'><span class='ir-bullet-dot'></span><span class='ir-bullet-text'>Mandate onboarding compliant with SEBI AIF Category III guidelines</span></li><li class='ir-bullet-item' id='meth_b1_3'><span class='ir-bullet-dot'></span><span class='ir-bullet-text'>Comprehensive risk disclosure documents and private placement memorandum</span></li><li class='ir-bullet-item' id='meth_b1_4'><span class='ir-bullet-dot'></span><span class='ir-bullet-text'>Personalized allocation framework aligned with capital hurdle requirements</span></li></ul></div></div></div><div class='ir-sec-state' id='meth_s2'><div class='ir-sec-split ir-reverse'><div class='ir-sec-col-card'><div class='ir-card'><div class='ir-card-head'><span class='ir-card-badge'>GOVERNANCE</span><div class='ir-card-crest'>IR</div></div><div class='ir-card-visual'><div class='ir-card-icon'><span class='ir-card-ring'></span><span class='ir-card-monogram'>02</span></div></div><div class='ir-card-footer'><h4 class='ir-card-title'>Custody &amp; Reporting</h4><div class='ir-card-sub'>Statutory Transparency</div></div></div></div><div class='ir-sec-col-content'><h3 class='ir-sec-title'>Institutional Custody &amp; Compliance</h3><div class='ir-sec-line-sub'></div><ul class='ir-bullet-list'><li class='ir-bullet-item' id='meth_b2_1'><span class='ir-bullet-dot'></span><span class='ir-bullet-text'>Tier-1 institutional custodian and independent depository oversight</span></li><li class='ir-bullet-item' id='meth_b2_2'><span class='ir-bullet-dot'></span><span class='ir-bullet-text'>Periodic statutory auditing and monthly performance attribution reporting</span></li><li class='ir-bullet-item' id='meth_b2_3'><span class='ir-bullet-dot'></span><span class='ir-bullet-text'>Strict operational separation of fund assets, governance, and management</span></li><li class='ir-bullet-item' id='meth_b2_4'><span class='ir-bullet-dot'></span><span class='ir-bullet-text'>Continuous risk surveillance and real-time portfolio VaR monitoring</span></li></ul></div></div></div><div class='ir-sec-state' id='meth_s3'><div class='ir-sec-split'><div class='ir-sec-col-card'><div class='ir-card'><div class='ir-card-head'><span class='ir-card-badge'>HOW WE WORK</span><div class='ir-card-crest'>IR</div></div><div class='ir-card-visual'><div class='ir-card-icon'><span class='ir-card-ring'></span><span class='ir-card-monogram'>03</span></div></div><div class='ir-card-footer'><h4 class='ir-card-title'>Quantitative Desk</h4><div class='ir-card-sub'>Execution Architecture</div></div></div></div><div class='ir-sec-col-content'><h3 class='ir-sec-title'>Market Cycle Discovery &amp; Trade Construction</h3><div class='ir-sec-line-sub'></div><ul class='ir-bullet-list'><li class='ir-bullet-item' id='meth_b3_1'><span class='ir-bullet-dot'></span><span class='ir-bullet-text'>Macro regime recognition identifying structural liquidity rotations across India</span></li><li class='ir-bullet-item' id='meth_b3_2'><span class='ir-bullet-dot'></span><span class='ir-bullet-text'>Capturing mispriced derivative spreads during sudden volatility dislocations</span></li><li class='ir-bullet-item' id='meth_b3_3'><span class='ir-bullet-dot'></span><span class='ir-bullet-text'>Multi-factor alpha modeling combining veteran CIO discretion with algorithmic models</span></li><li class='ir-bullet-item' id='meth_b3_4'><span class='ir-bullet-dot'></span><span class='ir-bullet-text'>Automated execution routing minimizing market impact cost and trade slippage</span></li></ul></div></div></div><div class='ir-sec-state' id='meth_s4'><div class='ir-center-stage'><div class='ir-center-eyebrow'><span class='ir-center-dot'></span><span>INTELLECTUAL CAPITAL &amp; RESEARCH</span><span class='ir-center-dot'></span></div><h2 class='ir-center-heading'>Empirical Rigor &amp; Strategy Insights</h2><p class='ir-center-desc'>Explore our empirical research papers, market cycle case studies, and quantitative strategy insights where we share our knowledge, analytical frameworks, and market perspectives.</p><div class='ir-center-pillars'><div><div class='ir-pillar-stat'>Case Studies</div><div class='ir-pillar-lbl'>Empirical Validations</div></div><div class='ir-pillar-sep'></div><div><div class='ir-pillar-stat'>Strategy Blogs</div><div class='ir-pillar-lbl'>Market Perspectives</div></div><div class='ir-pillar-sep'></div><div><div class='ir-pillar-stat'>Whitepapers</div><div class='ir-pillar-lbl'>Quantitative Research</div></div></div><a href='/insights' class='ir-sec-btn'>explore research &amp; insights &gt;&gt;</a></div></div></div></div></section>
+<section class='ir-contact-sec' id='contact-us'><div class='ir-contact-container'><div class='ir-contact-header'><h2 class='ir-sec-heading'>Contact Us</h2><div class='ir-sec-line'></div><p class='ir-contact-subheading'>Direct, confidential engagement with our senior investment committee for qualifying mandates.</p><div class='ir-contact-btn-wrap'><button type='button' class='ir-sec-btn' id='irConnectBtn'>let's connect &gt;&gt;</button></div></div></div></section><div class='ir-modal-overlay' id='irContactModal'><div class='ir-modal-card'><button type='button' class='ir-modal-close' id='irModalClose'>&times;</button><div class='ir-modal-head'><span class='ir-card-badge'>INITIATE DIALOGUE</span><h3 class='ir-modal-title'>Let's Connect</h3><p class='ir-modal-subtitle'>Please share your details below. Our capital allocation committee will connect with you within 24 hours.</p></div><form id='irLeadForm' class='ir-modal-form'><div class='ir-form-group'><label class='ir-form-label'>Full Name *</label><input type='text' required class='ir-form-input' placeholder='e.g. Vikramaditya Singhania' /></div><div class='ir-form-group'><label class='ir-form-label'>Email Address *</label><input type='email' required class='ir-form-input' placeholder='e.g. vikram@familyoffice.com' /></div><div class='ir-form-group'><label class='ir-form-label'>Investor Profile *</label><select required class='ir-form-input'><option value=''>Select Category</option><option value='Family Office'>Family Office</option><option value='Ultra HNI'>Ultra HNI</option><option value='Institutional Fund'>Institutional Fund / Asset Manager</option><option value='Registered Advisor'>Registered Wealth Advisor / MFO</option><option value='Other'>Other Qualifying Mandate</option></select></div><div class='ir-form-group'><label class='ir-form-label'>Brief Inquiry / Mandate Scope</label><textarea class='ir-form-input ir-form-textarea' rows='3' placeholder='Share your investment horizon, target allocation, or specific questions...'></textarea></div><button type='submit' class='ir-sec-btn ir-btn-submit'>submit mandate inquiry &gt;&gt;</button></form><div id='irFormSuccess' class='ir-form-success' style='display:none;'><div class='ir-card-badge'>INQUIRY RECEIVED</div><h4 class='ir-success-title'>Thank You for Reaching Out</h4><p class='ir-success-desc'>Our senior partners have received your details. A representative will contact you with relevant private placement memorandums and mandate overviews.</p><button type='button' class='ir-sec-btn' id='irSuccessCloseBtn'>close</button></div></div></div><footer class='ir-footer'><div class='ir-footer-inner'><div class='ir-footer-col ir-footer-brand'><div class='ir-brand-lockup'><div class='ir-card-crest'>IR</div><span class='ir-brand-name'>InvestRright</span></div><p class='ir-footer-tagline'>Institutional Alternative Investment Management &bull; SEBI Registered Category III AIF</p><p class='ir-footer-copy'>&copy; 2026 InvestRright Capital Advisors LLP. All rights reserved.</p><div class='ir-footer-addr'>Bandra Kurla Complex (BKC), Mumbai, Maharashtra 400051</div></div><div class='ir-footer-col ir-footer-links'><h4 class='ir-footer-col-title'>Insights</h4><div class='ir-footer-col-line'></div><ul class='ir-footer-list'><li><a href='/insights#case-studies' class='ir-footer-link'>Case Studies</a></li><li><a href='/insights#blogs' class='ir-footer-link'>Blogs</a></li></ul></div><div class='ir-footer-col ir-footer-links'><h4 class='ir-footer-col-title'>About Us</h4><div class='ir-footer-col-line'></div><ul class='ir-footer-list'><li><a href='#investment-methodology' class='ir-footer-link'>Investment Methodology</a></li><li><a href='#our-team' class='ir-footer-link'>Our Team</a></li><li><a href='#our-story' class='ir-footer-link'>Our Story</a></li></ul></div></div></footer>
+<script>(function(){function initStickySection(secId,stateIds,bulletIdsByState){var sec=document.getElementById(secId);if(!sec)return;var states=stateIds.map(function(id){return document.getElementById(id);});var bulletEls=bulletIdsByState.map(function(bList){return bList.map(function(id){return document.getElementById(id);});});var N=states.length;if(N<2)return;var slot=1.0/N;var trans=slot*0.25;function onScroll(){var header=document.querySelector('.ir-header');var stickyTop=header?header.offsetHeight:76;var r=sec.getBoundingClientRect();var h=sec.offsetHeight-(window.innerHeight-stickyTop);if(h<=0)return;var p=Math.max(0,Math.min(1,(stickyTop-r.top)/h));for(var i=0;i<N;i++){var start_slot=i*slot;var end_slot=(i+1)*slot;var fade_in=1.0;var in_trans=0.0;if(i>0){var in_start=start_slot-trans*0.5;var in_end=start_slot+trans*0.5;if(p<=in_start){fade_in=0.0;}else if(p>=in_end){fade_in=1.0;}else{fade_in=(p-in_start)/(in_end-in_start);}in_trans=20*(1.0-fade_in);}var fade_out=1.0;var out_trans=0.0;if(i<N-1){var out_start=end_slot-trans*0.5;var out_end=end_slot+trans*0.5;if(p<=out_start){fade_out=1.0;}else if(p>=out_end){fade_out=0.0;}else{fade_out=1.0-(p-out_start)/(out_end-out_start);}out_trans=-20*(1.0-fade_out);}var op=Math.min(fade_in,fade_out);var ty=fade_in<1.0?in_trans:(fade_out<1.0?out_trans:0.0);var sc=(i===N-1)?(0.97+0.03*fade_in):1.0;if(states[i]){states[i].style.opacity=op;states[i].style.transform='translateY('+ty+'px) scale('+sc+')';states[i].style.pointerEvents=op>0.1?'auto':'none';}var bEls=bulletEls[i];if(bEls&&bEls.length>0){var totalB=bEls.length;for(var b=0;b<totalB;b++){var bStart=(i===0?0.02:i*slot)+b*(slot*0.35/totalB);var bProg=Math.max(0,Math.min(1,(p-bStart)/(slot*0.2)));if(bEls[b]){bEls[b].style.opacity=bProg;bEls[b].style.transform='translateY('+(16*(1.0-bProg))+'px)';}}}}}window.addEventListener('scroll',onScroll,{passive:true});window.addEventListener('resize',onScroll,{passive:true});onScroll();}initStickySection('what-we-offer',['wwo_s1','wwo_s2','wwo_s3','wwo_s4'],[['wwo_c1','wwo_c2','wwo_c3'],['wwo_b2_1','wwo_b2_2','wwo_b2_3','wwo_b2_4'],['wwo_b3_1','wwo_b3_2','wwo_b3_3','wwo_b3_4'],['wwo_b4_1','wwo_b4_2','wwo_b4_3']]);initStickySection('our-team',['team_s1','team_s2','team_s3'],[['team_b1_1','team_b1_2','team_b1_3','team_b1_4','team_b1_5','team_b1_6'],['team_b2_1','team_b2_2','team_b2_3','team_b2_4'],[]]);initStickySection('investment-methodology',['meth_s1','meth_s2','meth_s3','meth_s4'],[['meth_b1_1','meth_b1_2','meth_b1_3','meth_b1_4'],['meth_b2_1','meth_b2_2','meth_b2_3','meth_b2_4'],['meth_b3_1','meth_b3_2','meth_b3_3','meth_b3_4'],[]]);var connectBtn=document.getElementById('irConnectBtn');var modal=document.getElementById('irContactModal');var closeBtn=document.getElementById('irModalClose');if(connectBtn&&modal){connectBtn.addEventListener('click',function(e){e.preventDefault();modal.classList.add('is-open');});}if(closeBtn&&modal){closeBtn.addEventListener('click',function(){modal.classList.remove('is-open');});}if(modal){modal.addEventListener('click',function(e){if(e.target===modal){modal.classList.remove('is-open');}});}var form=document.getElementById('irLeadForm');var successBox=document.getElementById('irFormSuccess');var successClose=document.getElementById('irSuccessCloseBtn');if(form){form.addEventListener('submit',function(e){e.preventDefault();if(successBox){successBox.style.display='block';}form.style.display='none';});}if(successClose&&modal){successClose.addEventListener('click',function(){modal.classList.remove('is-open');});}})();</script>
+</div>
+</body>
+</html>

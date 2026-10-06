@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hero Archive Overlay</title>
+  <link rel="stylesheet" href="index.css">
+  <style>body { margin: 0; background-color: #02170C; }</style>
+</head>
+<body>
+<!-- Hero Section -->
+    <section class="ir-hero-section">
+      <!-- Background: Quant Trader System & Glowing Technical Multi-Monitor Overlay with Vignette -->
+      <div class="ir-hero-bg">
+        <!-- Bandra-Worli Sea Link Mumbai Skyline Background (home-hero.png) -->
+        <div class="ir-hero-img-wrap">
+          <img src="hero-bg.jpg" style="filter: contrast(1.15) brightness(0.65) saturate(0.85);"
+            alt="Bandra-Worli Sea Link Mumbai Skyline" class="ir-hero-mumbai-img" />
+          <div class="ir-hero-overlay-gradient"></div>
+          <div class="ir-bg-grid"></div>
+        </div>
+
+        <!-- Vector Overlay of Trader Monitors & Real-Time Technical Charts -->
+        <svg class="ir-quant-desk-svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice"
+          xmlns="http://www.w3.org/2000/svg" style="opacity: 0.35;">
+          <defs>
+            <linearGradient id="monGlow1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#00ff88" stop-opacity="0.25" />
+              <stop offset="50%" stop-color="#006633" stop-opacity="0.1" />
+              <stop offset="100%" stop-color="#002211" stop-opacity="0" />
+            </linearGradient>
+            <linearGradient id="monGlow2" x1="0%" y1="100%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#bca763" stop-opacity="0.2" />
+              <stop offset="60%" stop-color="#10b981" stop-opacity="0.08" />
+              <stop offset="100%" stop-color="#02140a" stop-opacity="0" />
+            </linearGradient>
+            <linearGradient id="candlegreen" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#10b981" stop-opacity="0.8" />
+              <stop offset="100%" stop-color="#059669" stop-opacity="0.5" />
+            </linearGradient>
+            <linearGradient id="candlered" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#ef4444" stop-opacity="0.7" />
+              <stop offset="100%" stop-color="#b91c1c" stop-opacity="0.4" />
+            </linearGradient>
+          </defs>
+
+          <!-- Ambient Monitor Glow Volumes -->
+          <ellipse cx="400" cy="450" rx="360" ry="240" fill="url(#monGlow1)" filter="blur(60px)" />
+          <ellipse cx="1150" cy="420" rx="420" ry="280" fill="url(#monGlow2)" filter="blur(80px)" />
+
+          <!-- Multi-Monitor Rig Silhouette & Wireframes -->
+          <!-- Monitor 1 (Left - Technical Candlesticks & Oscillators) -->
+          <g opacity="0.32" transform="translate(60, 140)">
+            <rect x="0" y="0" width="380" height="230" rx="8" fill="#01180c" stroke="#0e4e2b" stroke-width="1.5" />
+            <!-- Grid -->
+            <line x1="0" y1="60" x2="380" y2="60" stroke="#004020" stroke-width="0.8" stroke-dasharray="3,3" />
+            <line x1="0" y1="120" x2="380" y2="120" stroke="#004020" stroke-width="0.8" stroke-dasharray="3,3" />
+            <line x1="0" y1="180" x2="380" y2="180" stroke="#004020" stroke-width="0.8" stroke-dasharray="3,3" />
+            <!-- Candlesticks series -->
+            <g transform="translate(20, 20)">
+              <line x1="15" y1="40" x2="15" y2="105" stroke="#10b981" stroke-width="1" />
+              <rect x="11" y="55" width="8" height="35" fill="url(#candlegreen)" />
+              <line x1="35" y1="30" x2="35" y2="90" stroke="#10b981" stroke-width="1" />
+              <rect x="31" y="45" width="8" height="30" fill="url(#candlegreen)" />
+              <line x1="55" y1="50" x2="55" y2="115" stroke="#ef4444" stroke-width="1" />
+              <rect x="51" y="60" width="8" height="40" fill="url(#candlered)" />
+              <line x1="75" y1="45" x2="75" y2="95" stroke="#10b981" stroke-width="1" />
+              <rect x="71" y="50" width="8" height="32" fill="url(#candlegreen)" />
+              <line x1="95" y1="20" x2="95" y2="80" stroke="#10b981" stroke-width="1" />
+              <rect x="91" y="30" width="8" height="38" fill="url(#candlegreen)" />
+              <line x1="115" y1="25" x2="115" y2="75" stroke="#10b981" stroke-width="1" />
+              <rect x="111" y="32" width="8" height="28" fill="url(#candlegreen)" />
+              <line x1="135" y1="40" x2="135" y2="100" stroke="#ef4444" stroke-width="1" />
+              <rect x="131" y="45" width="8" height="35" fill="url(#candlered)" />
+              <line x1="155" y1="35" x2="155" y2="95" stroke="#10b981" stroke-width="1" />
+              <rect x="151" y="40" width="8" height="40" fill="url(#candlegreen)" />
+              <line x1="175" y1="15" x2="175" y2="70" stroke="#10b981" stroke-width="1" />
+              <rect x="171" y="20" width="8" height="35" fill="url(#candlegreen)" />
+              <line x1="195" y1="10" x2="195" y2="65" stroke="#10b981" stroke-width="1" />
+              <rect x="191" y="15" width="8" height="40" fill="url(#candlegreen)" />
+              <line x1="215" y1="30" x2="215" y2="85" stroke="#ef4444" stroke-width="1" />
+              <rect x="211" y="35" width="8" height="35" fill="url(#candlered)" />
+              <line x1="235" y1="20" x2="235" y2="80" stroke="#10b981" stroke-width="1" />
+              <rect x="231" y="25" width="8" height="40" fill="url(#candlegreen)" />
+              <line x1="255" y1="10" x2="255" y2="60" stroke="#10b981" stroke-width="1" />
+              <rect x="251" y="15" width="8" height="35" fill="url(#candlegreen)" />
+              <line x1="275" y1="5" x2="275" y2="55" stroke="#10b981" stroke-width="1" />
+              <rect x="271" y="10" width="8" height="30" fill="url(#candlegreen)" />
+              <line x1="295" y1="15" x2="295" y2="65" stroke="#ef4444" stroke-width="1" />
+              <rect x="291" y="20" width="8" height="30" fill="url(#candlered)" />
+              <line x1="315" y1="5" x2="315" y2="50" stroke="#10b981" stroke-width="1" />
+              <rect x="311" y="8" width="8" height="28" fill="url(#candlegreen)" />
+            </g>
+            <!-- Moving average trendline -->
+            <path d="M 25 105 Q 110 80, 180 50 T 345 25" fill="none" stroke="#bca763" stroke-width="2" />
+          </g>
+
+          <!-- Monitor 2 (Center-Right Background - Deep Order Book & Depth Spectrum) -->
+          <g opacity="0.28" transform="translate(1080, 100)">
+            <rect x="0" y="0" width="460" height="280" rx="8" fill="#01160b" stroke="#0e4e2b" stroke-width="1.5" />
+            <path d="M 20 220 L 80 200 L 140 180 L 190 140 L 230 110 L 260 90 L 300 130 L 350 170 L 400 210 L 440 240"
+              fill="none" stroke="#10b981" stroke-width="2" />
+            <path
+              d="M 20 220 L 80 200 L 140 180 L 190 140 L 230 110 L 260 90 L 300 130 L 350 170 L 400 210 L 440 240 L 440 270 L 20 270 Z"
+              fill="#10b981" fill-opacity="0.08" />
+            <!-- Quant Code Stream Snippets -->
+            <text x="30" y="45" font-family="'JetBrains Mono', monospace" font-size="11" fill="#bca763"
+              opacity="0.7">MODEL: COINT_KALMAN_FILTER_V4.8</text>
+            <text x="30" y="65" font-family="'JetBrains Mono', monospace" font-size="10" fill="#10b981"
+              opacity="0.6">HEDGE_RATIO: 0.384 | PAIR_ZSCORE: +2.18σ</text>
+            <text x="30" y="82" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94a3b8"
+              opacity="0.5">POSITION: LONG 65% / SHORT 35% NET 30%</text>
+          </g>
+
+          <!-- Monitor 3 (Lower Center Background Matrix) -->
+          <g opacity="0.22" transform="translate(480, 480)">
+            <rect x="0" y="0" width="580" height="240" rx="8" fill="#02140a" stroke="#004020" stroke-width="1" />
+            <!-- Matrix Wave -->
+            <path d="M 20 180 C 100 120, 160 210, 240 140 C 320 80, 390 160, 460 90 C 500 50, 540 80, 560 60"
+              fill="none" stroke="#bca763" stroke-width="1.8" stroke-dasharray="4,4" />
+            <path d="M 20 150 C 90 90, 170 160, 250 100 C 330 40, 410 110, 480 60 C 520 30, 550 45, 570 30" fill="none"
+              stroke="#10b981" stroke-width="2.2" />
+          </g>
+        </svg>
+
+        <!-- Soft Vignette Mask -->
+        <div class="ir-vignette-overlay"></div>
+      </div>
+
+      <div class="ir-hero-container">
+        <div class="ir-hero-grid">
+
+          <!-- Left Column: Core Institutional Messaging -->
+          <div class="ir-hero-left">
+
+            <!-- Category / Compliance Pill Badge -->
+            <div class="ir-badge-row">
+              <span class="ir-reg-badge">
+                <span class="ir-gold-dot"></span>
+                SEBI CAT III AIF • REG. IN/AIF3/26-27/2259 • INSTITUTIONAL MANDATE
+              </span>
+            </div>
+
+            <!-- Main Headline -->
+            <h1 class="ir-hero-headline">
+              LONG-SHORT EQUITY <span class="ir-headline-bar">|</span> <span class="ir-headline-accent">BUILD FOR
+                EVERY
+                MARKET CYCLE</span>
+            </h1>
+
+            <!-- Sub-headline -->
+            <p class="ir-hero-subheadline">
+              Insights, detailed case studies, and proprietary quantitative models.
+            </p>
+
+            <!-- Institutional Quant Attributes -->
+            <div class="ir-quant-strip">
+              <div class="ir-quant-box">
+                <span class="ir-quant-label">MARKET BETA</span>
+                <span class="ir-quant-val">0.22</span>
+                <span class="ir-quant-sub">Uncorrelated Exposure</span>
+              </div>
+              <div class="ir-quant-box">
+                <span class="ir-quant-label">ANNUALIZED ALPHA</span>
+                <span class="ir-quant-val">+14.6%</span>
+                <span class="ir-quant-sub">Over Nifty 50 TRI</span>
+              </div>
+              <div class="ir-quant-box">
+                <span class="ir-quant-label">MAX DRAWDOWN</span>
+                <span class="ir-quant-val">-4.2%</span>
+                <span class="ir-quant-sub">Strict Stop-Loss Code</span>
+              </div>
+            </div>
+
+            <!-- CTA Button Block -->
+            <div class="ir-cta-group">
+              <a href="#request-ppm" class="ir-btn-gold">
+                Request Private Placement Memorandum
+                <span class="ir-btn-arrow">→</span>
+              </a>
+              <div class="ir-cta-disclaimer">
+                <span class="ir-disc-lock">🔒</span> For Accredited Investors, Family Offices & HNWIs. Minimum
+                commitment as per SEBI regulations.
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Graph Illustration (Long-Short Position over time vs. Benchmark) -->
+          <div class="ir-hero-right">
+            <div class="ir-graph-card">
+
+              <!-- Graph Card Header -->
+              <div class="ir-card-header">
+                <div class="ir-card-titles">
+                  <span class="ir-card-tag">PERFORMANCE ATTRIBUTION MODEL</span>
+                  <h3 class="ir-card-h3">Long-Short Alpha vs. Benchmark</h3>
+                  <span class="ir-card-sub">InvestRright Infinity Growth Fund – I vs. NIFTY 50 TR</span>
+                </div>
+                <div class="ir-card-status">
+                  <span class="ir-pill-live">
+                    <span class="ir-pulse-dot"></span> LIVE QUANT MODEL
+                  </span>
+                  <span class="ir-stat-big">+34.8% <span class="ir-stat-sub">NET ALPHA</span></span>
+                </div>
+              </div>
+
+              <!-- SVG Graph Illustration matching image_1.png specifications -->
+              <div class="ir-svg-chart-wrap">
+                <svg class="ir-alpha-chart-svg" viewBox="0 0 540 280" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <!-- Gradient for Alpha Expansion Shade -->
+                    <linearGradient id="irAlphaShade" x1="0%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" stop-color="#bca763" stop-opacity="0.32" />
+                      <stop offset="60%" stop-color="#10b981" stop-opacity="0.14" />
+                      <stop offset="100%" stop-color="#004020" stop-opacity="0.02" />
+                    </linearGradient>
+
+                    <!-- Strategy Glow Gradient -->
+                    <linearGradient id="irStrategyLine" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%" stop-color="#E5C378" />
+                      <stop offset="50%" stop-color="#BCA763" />
+                      <stop offset="100%" stop-color="#10B981" />
+                    </linearGradient>
+
+                    <!-- Filter for Line Glow -->
+                    <filter id="irLineGlow" x="-20%" y="-20%" width="140%" height="140%">
+                      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#BCA763" flood-opacity="0.45" />
+                    </filter>
+                  </defs>
+
+                  <!-- Chart Grid Lines -->
+                  <g stroke="rgba(188, 167, 99, 0.15)" stroke-width="0.8">
+                    <line x1="45" y1="35" x2="520" y2="35" stroke-dasharray="3,3" />
+                    <line x1="45" y1="85" x2="520" y2="85" stroke-dasharray="3,3" />
+                    <line x1="45" y1="135" x2="520" y2="135" stroke-dasharray="3,3" />
+                    <line x1="45" y1="185" x2="520" y2="185" stroke-dasharray="3,3" />
+                    <line x1="45" y1="235" x2="520" y2="235" />
+                  </g>
+
+                  <!-- Y-Axis Labels -->
+                  <text x="38" y="40" font-family="'Inter', sans-serif" font-size="10" fill="#A89B77"
+                    text-anchor="end">+80%</text>
+                  <text x="38" y="90" font-family="'Inter', sans-serif" font-size="10" fill="#A89B77"
+                    text-anchor="end">+60%</text>
+                  <text x="38" y="140" font-family="'Inter', sans-serif" font-size="10" fill="#A89B77"
+                    text-anchor="end">+40%</text>
+                  <text x="38" y="190" font-family="'Inter', sans-serif" font-size="10" fill="#A89B77"
+                    text-anchor="end">+20%</text>
+                  <text x="38" y="238" font-family="'Inter', sans-serif" font-size="10" fill="#A89B77"
+                    text-anchor="end">0%</text>
+
+                  <!-- X-Axis Labels -->
+                  <text x="55" y="258" font-family="'Inter', sans-serif" font-size="10" fill="#A89B77"
+                    text-anchor="middle">Q1 '24</text>
+                  <text x="145" y="258" font-family="'Inter', sans-serif" font-size="10" fill="#A89B77"
+                    text-anchor="middle">Q3 '24</text>
+                  <text x="240" y="258" font-family="'Inter', sans-serif" font-size="10" fill="#A89B77"
+                    text-anchor="middle">Q1 '25</text>
+                  <text x="335" y="258" font-family="'Inter', sans-serif" font-size="10" fill="#A89B77"
+                    text-anchor="middle">Q3 '25</text>
+                  <text x="430" y="258" font-family="'Inter', sans-serif" font-size="10" fill="#A89B77"
+                    text-anchor="middle">Q1 '26</text>
+                  <text x="515" y="258" font-family="'Inter', sans-serif" font-size="10" fill="#A89B77"
+                    text-anchor="middle">Q4 '26</text>
+
+                  <!-- Benchmark Drawdown Highlight Band (Volatile Market Cycle) -->
+                  <rect x="200" y="35" width="85" height="200" fill="rgba(239, 68, 68, 0.06)" rx="4" />
+                  <text x="242" y="50" font-family="'Inter', sans-serif" font-weight="600" font-size="9" fill="#F87171"
+                    text-anchor="middle" letter-spacing="0.5">MARKET DIP (-14%)</text>
+
+                  <!-- SHADED ALPHA AREA between Strategy & Benchmark -->
+                  <!-- Strategy Curve from (50, 235) to (515, 45) -->
+                  <!-- Benchmark Curve from (515, 140) back to (50, 235) -->
+                  <path d="M 50 235
+                         C 100 215, 145 185, 195 160
+                         C 235 152, 280 148, 325 120
+                         C 380 95, 450 65, 515 45
+                         L 515 140
+                         C 450 152, 385 165, 325 178
+                         C 280 195, 235 212, 195 188
+                         C 145 172, 100 205, 50 235 Z" fill="url(#irAlphaShade)" />
+
+                  <!-- BENCHMARK INDEX LINE (NIFTY 50 TRI) -->
+                  <!-- Volatile, with deep drawdowns during market corrections -->
+                  <path d="M 50 235 
+                         C 95 210, 140 180, 195 188
+                         C 235 212, 280 195, 325 178
+                         C 385 165, 450 152, 515 140" fill="none" stroke="#94A3B8" stroke-width="2"
+                    stroke-dasharray="4,4" opacity="0.85" />
+
+                  <!-- INVESTRRIGHT LONG-SHORT STRATEGY LINE -->
+                  <!-- Steady upward compounded trajectory; capital preserved during market crash; steady alpha slope -->
+                  <path d="M 50 235 
+                         C 100 215, 145 185, 195 160 
+                         C 235 152, 280 148, 325 120 
+                         C 380 95, 450 65, 515 45" fill="none" stroke="url(#irStrategyLine)" stroke-width="3.5"
+                    stroke-linecap="round" filter="url(#irLineGlow)" />
+
+                  <!-- Milestone Points on Strategy Line -->
+                  <!-- Inception Point -->
+                  <circle cx="50" cy="235" r="4" fill="#BCA763" stroke="#004020" stroke-width="2" />
+
+                  <!-- Capital Preservation Point during Dip -->
+                  <circle cx="235" cy="152" r="5" fill="#10B981" stroke="#FFFFFF" stroke-width="2" />
+                  <g transform="translate(195, 115)">
+                    <rect x="0" y="0" width="105" height="24" rx="4" fill="#004020" stroke="#BCA763" stroke-width="1" />
+                    <text x="52" y="15" font-family="'Inter', sans-serif" font-weight="600" font-size="8.5"
+                      fill="#F4F1E1" text-anchor="middle">HEDGE PRESERVATION</text>
+                  </g>
+
+                  <!-- Current Cumulative Milestone Point -->
+                  <circle cx="515" cy="45" r="6" fill="#FFF3D1" stroke="#BCA763" stroke-width="2.5" />
+                  <circle cx="515" cy="140" r="4.5" fill="#94A3B8" stroke="#002412" stroke-width="2" />
+
+                  <!-- Alpha Spread Visual Bracket at End of Graph -->
+                  <line x1="523" y1="45" x2="532" y2="45" stroke="#BCA763" stroke-width="1.5" />
+                  <line x1="532" y1="45" x2="532" y2="140" stroke="#BCA763" stroke-width="1.5" />
+                  <line x1="523" y1="140" x2="532" y2="140" stroke="#BCA763" stroke-width="1.5" />
+                </svg>
+              </div>
+
+              <!-- Legend & Performance Metric Highlights -->
+              <div class="ir-card-footer">
+                <div class="ir-legend-group">
+                  <div class="ir-legend-item">
+                    <span class="ir-leg-line ir-leg-gold"></span>
+                    <span class="ir-leg-text"><strong>InvestRright Long-Short</strong> (Net of Fees)</span>
+                    <span class="ir-leg-num ir-gold">+78.4%</span>
+                  </div>
+                  <div class="ir-legend-item">
+                    <span class="ir-leg-line ir-leg-bench"></span>
+                    <span class="ir-leg-text"><strong>Benchmark Index</strong> (NIFTY 50 TR)</span>
+                    <span class="ir-leg-num ir-muted">+38.2%</span>
+                  </div>
+                </div>
+
+                <!-- Alpha Tag Pill -->
+                <div class="ir-alpha-pill">
+                  <span class="ir-alpha-star">★</span>
+                  <span class="ir-alpha-title">Alpha Delivered:</span>
+                  <span class="ir-alpha-val">+40.2% Excess Return</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+</body>
+</html>
